@@ -12,9 +12,16 @@ public class Grades {
 	 * 
 	 */
 	private int studentid = 123456;
-	private String moduleid = "ENTPERF";
+	private String moduleid = "ENTPERFGHY";
 	private double grade = 0.0;
 	
+	
+	public Grades() {
+		// TODO Auto-generated constructor stub
+		
+		
+		
+	}
 	public int getStudentid() {
 		return studentid;
 	}
@@ -32,12 +39,6 @@ public class Grades {
 	}
 	public void setGrade(double grade) {
 		this.grade = grade;
-	}
-	public Grades() {
-		// TODO Auto-generated constructor stub
-		
-		
-		
 	}
 
 }
