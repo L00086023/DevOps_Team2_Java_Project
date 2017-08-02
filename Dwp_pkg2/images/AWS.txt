@@ -3,3 +3,8 @@ AWS Lambda lets you run code without provisioning or managing servers. You pay o
 
 AWS AUORA l00092270
 Amazon Aurora is a fully managed, MySQL-compatible, relational database engine that combines the speed and reliability of high-end commercial databases with the simplicity and cost-effectiveness of open-source databases. Amazon Aurora is a drop-in replacement for MySQL and makes it simple and cost-effective to set up, operate, and scale your new and existing MySQL deployments, thus freeing you to focus on your business and applications. Amazon RDS provides administration for Amazon Aurora by handling routine database tasks such as provisioning, patching, backup, recovery, failure detection, and repair. Amazon RDS also provides push-button migration tools to convert your existing Amazon RDS for MySQL applications to Amazon Aurora.
+
+SOME USEFUL LINKS IN RELATION TO CONNECTING TO AWS RESOURCES FROM JAVA
+https://medium.com/modernnerd-code/connecting-to-mysql-db-on-aws-ec2-with-jdbc-for-java-91dba3003abb
+https://www.youtube.com/watch?v=xQo7IDtuOzI
+https://www.youtube.com/watch?v=zETF3Rh6AJA&t=1s
