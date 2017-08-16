@@ -1,0 +1,100 @@
+
+#topnav {
+	margin:0;
+	padding:0;
+	list-style:none;
+	height:55px;
+	padding-left:15px;
+	padding-right:0px;
+	background-color:white;
+	//border:5px #b24fff solid;
+	border-radius: 25px;
+	clear:both;
+}
+
+#topnav ul {
+  	width: auto;
+  	list-style-type: none;
+  	margin: 0;
+	padding:0;
+	
+}
+
+#topnav ul li{
+	display:inline;
+	list-style-type:none;
+	margin: 0 20px 0 0;
+	font-size:14px;
+	color: white;
+	background-color:#b24fff;
+	border-radius: 20px;
+	width: 22.7%;
+}
+
+#topnav li{
+	float:left;
+	display:block;
+	position:relative;
+	z-index:999;
+	
+}
+
+
+
+#topnav li a{
+	display:block;
+	padding:0;
+	font-weight: bold;
+	line-height: 30px;
+	text-decoration:none;
+	color: white;
+	text-transform:uppercase;
+	font-size: 20px;  /*  Menu text size */
+	padding:0px 12px;
+}
+
+
+/*  'about us' sub-menu */
+#topnav > ul li.has-sub:hover ul {
+  display: block;
+  color: blue;
+}
+
+
+/*  'about us' sub-menu */
+#topnav > ul li.has-sub ul {
+  display: none;
+  width: 190px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: #ffffff;
+  border: 1px solid #fff;
+}
+
+
+/*  'about us' sub-menu */
+#topnav > ul li.has-sub ul li {
+  display: block;
+}
+
+
+/* Padding around menu text */
+#topnav > ul li a {
+  padding: 12px 24px 11px 24px;
+  }
+
+
+/* menu font colour */ 
+#topnav a:visited{
+	color:white;
+}
+
+
+/* Menu text colour when mouse is hovering over it */
+#topnav a:hover{
+	color:green;
+}
+
+
