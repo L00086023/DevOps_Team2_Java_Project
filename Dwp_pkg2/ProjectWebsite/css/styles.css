@@ -4,23 +4,23 @@
 font-family: 'Open Sans', sans-serif;
 font-family: 'Open Sans Condensed', sans-serif;
 
-
 */
 
 body{
-	background-color:#7a2ab7;
+	background-color:#b24fff;
 	font-family:Arial, Helvetica, sans-serif;
-	
 }
 
 h1, h2, h3{
 	font-family:'Open Sans Condensed', Arial, Helvetica, sans-serif;
+	color: black;
 }
 
 
-
 #wrapper{
-	width:900px; margin:10px auto;
+	width:70%; 
+	
+	margin:80px auto;
 	background-color:#FFF;
 	border-radius: 20px;
 	padding:0 10px;
@@ -30,6 +30,12 @@ h1, h2, h3{
 	float:left;
 	margin:30px 0;
 }
+
+#login{
+		float:right;
+		margin:40px 0;
+		}
+		
 
 #social-media{
 	float:right;
@@ -45,16 +51,6 @@ h1, h2, h3{
 	text-align:right;
 }
 
-
-#topnav{
-	clear:both;
-}
-
-#topnav ul li{
-	background-color:#7a2ab7;
-	border-radius: 20px;
-	width: 22.7%;
-}
 
 #content{
 	border-radius:20px;
