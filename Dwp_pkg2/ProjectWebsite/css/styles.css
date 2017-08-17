@@ -14,7 +14,10 @@ body{
 h1, h2, h3{
 	font-family:'Open Sans Condensed', Arial, Helvetica, sans-serif;
 	color: black;
+	margin-left: 25%;
 }
+
+
 
 
 #wrapper{
@@ -26,6 +29,13 @@ h1, h2, h3{
 	padding:0 10px;
 }
 
+
+#top{
+	width: 1155px;
+	height: 200px;
+}
+
+
 #logo{
 	float:left;
 	margin:30px 0;
@@ -36,20 +46,33 @@ h1, h2, h3{
 		margin:40px 0;
 		}
 		
+#login ul a{
+	background-color:#b24fff;
+	display:block;
+	padding:0;
+	font-weight: bold;
+	line-height: 20px;
+	text-decoration:none;
+	color: white;
+	text-transform:uppercase;
+	font-size: 20px;  /*  log-in / reg  text size */
+	padding:0px 12px;
+	border-radius: 25px;
+}
+		
 
-#social-media{
-	float:right;
-	margin:40px 0;
+#phone_addr{
+	float: left;
+	margin-top: 1%;
+	margin-left: 5%;
 }
 
-#social-media ul li{ 
-	display:inline;
-	list-style-type:none;
-}
+#phone_addr p{
+	 padding: 2%;
+	 font-weight: bold;
+	}
+	
 
-#social-media p{
-	text-align:right;
-}
 
 
 #content{
@@ -61,7 +84,7 @@ h1, h2, h3{
 
 #content p{
 	font-size:12px;
-	line-height:180%;
+	margin-left: 35%;
 }
 
 #content h2{
