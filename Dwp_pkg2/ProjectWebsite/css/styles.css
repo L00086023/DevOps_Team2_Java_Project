@@ -156,10 +156,18 @@ h1, h2, h3{
 	margin:0px 15px 15px 0px;
 }
 
-/* Contact Form Styles */
+/* log-in Form Styles */
 
-#contact-form ol li{
+#login-form{
+	margin-left:25%;
+	}
+
+#login-form ol li{
 	list-style-type:none;
+}
+
+#login-form p{
+	margin-left: 10%;
 }
 
 
