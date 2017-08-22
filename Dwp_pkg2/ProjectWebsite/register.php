@@ -63,7 +63,6 @@ if(!empty($_POST["register-user"])) {
             <link href="css/menustyle.css" rel="stylesheet" type="text/css" media="screen">
             <link href="css/imagegallery.css" rel="stylesheet" type="text/css" media="screen">
     </head>
-<body>
  <body>
         <div id="wrapper">
         
@@ -96,122 +95,124 @@ if(!empty($_POST["register-user"])) {
                         </ul>
 
   
-<body>  
+ 
 
 
 
-<div id="content-wrapper">
-    <div id="content"> 
-    <div id="about">
-                       
-     <br>                     
-     <h1> Registration </h1 text-align:center;>
-           
-</div>
+                            <div id="content-wrapper">
+                                <div id="content"> 
+                                <div id="about">
+                                                   
+                                 <br>                     
+                                 <h1> Registration </h1 text-align:center;>
+                                       
+
 
                                             
 
 
-<style>
-     h1{
+                                <style>
+                                     h1{
 
-          margin-left: 385px;
-     }
-     .btnRegister {
-    padding: 10px 30px;
-    background-color: #3367b2;
-    border: 0;
+                                          margin-left: 385px;
+                                     }
+                                     .btnRegister {
+                                    padding: 10px 30px;
+                                    background-color: #3367b2;
+                                    border: 0;
 
-    color: #FFF;
-    cursor: pointer;
-    border-radius: 4px;
-    margin-left: 105px;
-}    
-.error-message {
-    padding: 7px 10px;
-    background: #fff1f2;
-    border: #ffd5da 1px solid;
-    color: #d6001c;
-    border-radius: 4px;
-}
-.success-message {
-    padding: 7px 10px;
-    background: #cae0c4;
-    border: #c3d0b5 1px solid;
-    color: #027506;
-    border-radius: 4px;
-} 
-</style> 
-
-
-<form name="frmRegistration" method="post" action="">
-<table border="0" width="600" align="center" class="demo-table">
-<?php if(!empty($success_message)) { ?> 
-<div class="success-message"><?php if(isset($success_message)) echo $success_message; ?></div>
-<?php } ?>
-<?php if(!empty($error_message)) { ?>   
-<div class="error-message"><?php if(isset($error_message)) echo $error_message; ?></div>
-<?php } ?>
-
-<tr>
-<td>Customer Id</td>
-<td><input type="text" class="demoInputBox" name="CustID" value="<?php if(isset($_POST['CustID'])) echo $_POST['CustID']; ?>"></td>
-</tr>
-<tr>
-<td>Name</td>
-<td><input type="text" class="demoInputBox" name="Name" value="<?php if(isset($_POST['Name'])) echo $_POST['Name']; ?>"></td>
-</tr>
-<tr>
-<td>Address</td>
-<td><input type="text" class="demoInputBox" name="Address" value="<?php if(isset($_POST['Address'])) echo $_POST['Address']; ?>"></td>
-</tr>
-<tr>
-<td>Email</td>
-<td><input type="text" class="demoInputBox" name="Email" value="<?php if(isset($_POST['Email'])) echo $_POST['Email']; ?>"></td>
-</tr>
-<tr>
-<td>number</td>
-<td><input type="text" class="demoInputBox" name="Telumber" value="<?php if(isset($_POST['Telumber'])) echo $_POST['Telumber']; ?>"></td>
-</tr>
-<tr>
-<td>Password</td>
-<td><input type="password" class="demoInputBox" name="Password" value=""></td>
-</tr>
+                                    color: #FFF;
+                                    cursor: pointer;
+                                    border-radius: 4px;
+                                    margin-left: 105px;
+                                }    
+                                .error-message {
+                                    padding: 7px 10px;
+                                    background: #fff1f2;
+                                    border: #ffd5da 1px solid;
+                                    color: #d6001c;
+                                    border-radius: 4px;
+                                }
+                                .success-message {
+                                    padding: 7px 10px;
+                                    background: #cae0c4;
+                                    border: #c3d0b5 1px solid;
+                                    color: #027506;
+                                    border-radius: 4px;
+                                } 
+                                </style> 
 
 
+                                <form name="frmRegistration" method="post" action="">
+                                <table border="0" width="600" align="center" class="demo-table">
+                                <?php if(!empty($success_message)) { ?> 
+                                <div class="success-message"><?php if(isset($success_message)) echo $success_message; ?></div>
+                                <?php } ?>
+                                <?php if(!empty($error_message)) { ?>   
+                                <div class="error-message"><?php if(isset($error_message)) echo $error_message; ?></div>
+                                <?php } ?>
 
-<tr>
-<td colspan=3>
-<input type="checkbox" name="terms"> I accept Terms and Conditions <input type="submit" name="register-user" value="Register" class="btnRegister"></td>
-</tr>
-</table>
-    </div> <!-- end content div -->
-                </div><!-- end content-wrapper div -->
-            <!-- ################################################################################ -->
+                                <tr>
+                                <td>Customer Id</td>
+                                <td><input type="text" class="demoInputBox" name="CustID" value="<?php if(isset($_POST['CustID'])) echo $_POST['CustID']; ?>"></td>
+                                </tr>
+                                <tr>
+                                <td>Name</td>
+                                <td><input type="text" class="demoInputBox" name="Name" value="<?php if(isset($_POST['Name'])) echo $_POST['Name']; ?>"></td>
+                                </tr>
+                                <tr>
+                                <td>Address</td>
+                                <td><input type="text" class="demoInputBox" name="Address" value="<?php if(isset($_POST['Address'])) echo $_POST['Address']; ?>"></td>
+                                </tr>
+                                <tr>
+                                <td>Email</td>
+                                <td><input type="text" class="demoInputBox" name="Email" value="<?php if(isset($_POST['Email'])) echo $_POST['Email']; ?>"></td>
+                                </tr>
+                                <tr>
+                                <td>number</td>
+                                <td><input type="text" class="demoInputBox" name="Telumber" value="<?php if(isset($_POST['Telumber'])) echo $_POST['Telumber']; ?>"></td>
+                                </tr>
+                                <tr>
+                                <td>Password</td>
+                                <td><input type="password" class="demoInputBox" name="Password" value=""></td>
+                                </tr>
 
-</form>
-</body>
 
-  <div id="footer">
-                                    <p>&copy;Copyright 2017 &bull; All Rights Reserved &bull; Dev Ops Team 2 Project(Pansies) @ LYITLabs  &bull; LYIT Letterkenny Co.Donegal</p>
-                                    <div id="social-media">
-                                <ul>
-                                        <li><a href="http://www.facebook.com"><img src="images/icons/facebook.png"></a></li>
-                                        <li><a href="http://www.twitter.com"><img src="images/icons/twitter.png"></a></li>
-                                        <li><a href="http://www.instagram.com"><img src="images/icons/Instagram-Icon.png"></a></li>
-                                        <li><a href="http://www.youtube.com"><img src="images/icons/youtube.png"></a></li>
-                                        
-                                </ul>
-                        </div><!--Close social-media div-->
-                                    
-                        </div><!--Close footer div-->
+
+                                <tr>
+                                <td colspan=3>
+                                <input type="checkbox" name="terms"> I accept Terms and Conditions <input type="submit" name="register-user" value="Register" class="btnRegister"></td>
+                                </tr>
+                                </table>
+                                    </div> <!-- end content div -->
+                                                </div><!-- end content-wrapper div -->
+                                                </div>
+                                            <!-- ################################################################################ -->
+
+                                </form>
+
+
+                                  <div id="footer">
+                                                                    <p>&copy;Copyright 2017 &bull; All Rights Reserved &bull; Dev Ops Team 2 Project(Pansies) @ LYITLabs  &bull; LYIT Letterkenny Co.Donegal</p>
+                                                                   <div id="social-media">
+                                                                <ul>
+                                                                        <a href="http://www.facebook.com"><img src="images/icons/facebook.png"></a>
+                                                                        <a href="http://www.twitter.com"><img src="images/icons/twitter.png"></a>
+                                                                        <a href="http://www.instagram.com"><img src="images/icons/Instagram-Icon.png"></a>
+                                                                        <a href="http://www.youtube.com"><img src="images/icons/youtube.png"></a>
+                                                                </ul>
+                                                                </div>
+                                </div>
+                                </div>
+                                                 
+
                         
-                        
+                     
+                       
                         
                 
              
-        </div><!--Close wrapper div-->
-    </body>
+           </body>
 
 <!-- InstanceEnd -->
 </html>
