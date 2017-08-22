@@ -1,14 +1,8 @@
 
 /* menu container */
 #topnav {
-	margin:0;
-	padding:0;
 	list-style:none;
-	height:55px;
-	padding-left:15px;
-	padding-right:0px;
-	background-color:white;
-	//border:5px #b24fff solid;
+	padding-bottom: 4%;
 	border-radius: 25px;
 	clear:both;
 }
@@ -17,7 +11,7 @@
 #topnav ul {
   	width: auto;
   	list-style-type: none;
-  	margin: 0;
+  	margin:0;
 	padding:0;
 	
 }
@@ -26,16 +20,13 @@
 #topnav ul li{
 	display:inline;
 	list-style-type:none;
-	
-	margin-right: 10px;
-	margin-left: 10px;
+	margin-right: 1.1%;
+	margin-left: 1.1%;
 	font-size:14px;
 	color: white;
-	background-color:#36b21a;
-
+	background-color:#66FF99;
 	border-radius: 20px;
 	width: 22.7%;
-	
 	float:left;
 	display:block;
 	position:relative;
@@ -49,12 +40,11 @@
 	display:block;
 	padding:0;
 	font-weight: bold;
-	line-height: 30px;
+	line-height: 80%;
 	text-decoration:none;
 	color: white;
 	text-transform:uppercase;
 	font-size: 20px;  /*  Menu text size */
-	padding:0px 12px;
 }
 
 
@@ -68,7 +58,7 @@
 /*  'about us' sub-menu */
 #topnav > ul li.has-sub ul {
   display: none;
-  width: 190px;
+  width: 19%;
   position: absolute;
   margin: 0;
   padding: 0;
@@ -86,7 +76,7 @@
 
 /* Padding around menu text */
 #topnav > ul li a {
-  padding: 12px 24px 11px 24px;
+  padding: 4% 8% 4% 8%;
   }
 
 
@@ -110,9 +100,9 @@
 
 #social-media{
 	float:right;
-	margin-top: 5%;
-	
-	
+	clear: top;
+	margin: 1%;
+	background-color: ;
 }
 
 #social-media ul li{ 
