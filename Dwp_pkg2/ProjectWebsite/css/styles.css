@@ -6,6 +6,8 @@ font-family: 'Open Sans Condensed', sans-serif;
 
 */
 
+
+
 body{
 	background-color:#b24fff;
 	font-family:Arial, Helvetica, sans-serif;
@@ -17,6 +19,7 @@ h1, h2, h3{
 	margin-left: 25%;
 }
 
+
 #wrapper{
 	width:70%; 
 	margin: 2% auto;
@@ -27,13 +30,20 @@ h1, h2, h3{
 
 #top{
 	padding-right: 3.1%;
+	
 	}
+
+
+/* ######### LOGO ###################################### */
+
 
 #logo{
 	float:left;
 	margin:3% 0;
 }
 
+
+/* ######### LOG IN  ##################################### */
 #login{
 		float:right;
 		margin-left:3%;
@@ -42,7 +52,7 @@ h1, h2, h3{
 		}
 		
 #login ul a{
-	background-color:#66FF99;
+	background-color:#36b21a;
 	display:block;
 	font-weight: bold;
 	text-decoration:none;
@@ -52,17 +62,33 @@ h1, h2, h3{
 	border-radius: 25px;
 	padding-left: 8%;
 }
-		
-#jssor_1{
-	width: 100%;
-	height: 350px;
-	border-radius: 25px;
+
+#login a:hover{
+	color:green;
 }
 
-[data-u="slides"]{
-	width: 100%;
-	height: 350px;
+
+/* ######### SOCIAL MEDIA  ######################################## */
+
+#social-media{
+	float:right;
+	clear: both;
+	margin: 1%;
+	background-color: ;
 }
+
+#social-media ul li{ 
+	display:inline;
+	list-style-type:none;
+	
+}
+
+#social-media p{
+	text-align:right;
+}
+
+
+/* ######### PHONE & ADDRESS  ######################################## */
 
 #phone_addr{
 	float: left;
@@ -74,6 +100,123 @@ h1, h2, h3{
 	 padding: 2%;
 	 font-weight: bold;
 	}
+
+
+/* ################## MENU ######################################## */
+
+/* menu container */
+#topnav {
+	list-style:none;
+	padding-bottom: 4%;
+	border-radius: 25px;
+	clear:both;
+}
+
+/* whole menu */
+#topnav ul {
+  	width: auto;
+  	list-style-type: none;
+  	margin:0;
+	padding:0;
+	
+}
+
+/* Menu boxes */
+#topnav ul li{
+	display:inline;
+	list-style-type:none;
+	margin-right: 1.1%;
+	margin-left: 1.1%;
+	font-size:14px;
+	color: white;
+	background-color:#36b21a;
+	border-radius: 20px;
+	width: 22.7%;
+
+	float:left;
+	display:block;
+	position:relative;
+	z-index:999;
+}
+
+
+
+/* menu text */
+#topnav li a{
+	display:block;
+	
+	font-weight: bold;
+	line-height: 80%;
+	text-decoration:none;
+	color: white;
+	text-transform:uppercase;
+	font-size: 25px;  /*  Menu text size */
+}
+
+
+/*  'about us' sub-menu */
+#topnav > ul li.has-sub:hover ul {
+  display: block;
+  color: blue;
+}
+
+
+/*  'about us' sub-menu */
+#topnav > ul li.has-sub ul {
+  display: none;
+  width: 19%;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: #ffffff;
+  border: 1px solid #fff;
+}
+
+
+/*  'about us' sub-menu */
+#topnav > ul li.has-sub ul li {
+  display: block;
+}
+
+
+/* Padding around menu text */
+#topnav > ul li a {
+  padding: 4% 8% 4% 8%;
+  }
+
+
+/* menu font colour */ 
+#topnav a:visited{
+	color:white;
+}
+
+
+/* Menu text colour when mouse is hovering over it */
+#topnav a:hover{
+	color:green;
+}
+
+
+
+
+/* ##################  IMAGE SLIDER ######################################## */
+
+
+#jssor_1{
+	width: 100%;
+	height: 350px;
+	border-radius: 25px;
+}
+
+[data-u="slides"]{
+	width: 100%;
+	height: 350px;
+}
+
+
+
+/* ################## BODY ######################################## */
 
 #content{
 	border-radius:20px;
@@ -90,6 +233,8 @@ h1, h2, h3{
 }
 
 
+
+/* ##################  FOOTER / COPYRIGHT  ######################################## */
 #footer{
 	clear:both;
 	border-top:.1% #666 solid;
@@ -102,7 +247,11 @@ h1, h2, h3{
 	font-weight:bold;
 }
 
-/* log-in Form Styles */
+
+
+/* ##################################################### */
+/* ######### LOG - IN PAGE  ######################################## */
+
 
 #login-form{
 	margin-left:25%;
