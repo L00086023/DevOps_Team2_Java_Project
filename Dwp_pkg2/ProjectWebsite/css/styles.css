@@ -6,6 +6,12 @@ font-family: 'Open Sans Condensed', sans-serif;
 
 */
 
+#background
+{
+	background-image: url("images/bg.jpg");    
+	background-size: cover;
+}
+
 body{
 	background-color:#b24fff;
 	font-family:Arial, Helvetica, sans-serif;
@@ -17,75 +23,231 @@ h1, h2, h3{
 	margin-left: 25%;
 }
 
+
 #wrapper{
 	width:70%; 
 	margin: 2% auto;
 	background-color:#FFF;
 	border-radius: 25px;
-	padding:0 8%;
+	padding:0 2%;
 }
 
 #top{
-	padding-right: 1.5%;
+	padding-right: 3.1%;
+	
 	}
+
+
+/* ######### LOGO ###################################### */
+
 
 #logo{
 	float:left;
 	margin:3% 0;
+	
 }
 
+
+/* ######### LOG IN  ##################################### */
 #login{
+		position: relative;
 		float:right;
-		width: 20%;
-		height: 10%;
-		margin-top: 3%;
+		margin-left:3%;
+		margin-top:3%;
+		width: 30%;
 		}
+		
+#login ul a{
+
+}
+
+#login a:hover{
+	color:green;
+}
+
 
 #loginlink a{
-	background-color:#66FF99;
+	background-color:#36b21a;
+	display:block;
 	font-weight: bold;
 	text-decoration:none;
 	color: white;
 	text-transform:uppercase;
 	font-size: 20px;  /*  log-in / reg  text size */
 	border-radius: 25px;
-	padding: 3%;
+	padding: 8%;
 	float: left;
-	margin-left: 3%;
-	}
+}
 
 #reglink a{
-	background-color:#66FF99;
+	
+	background-color:#36b21a;
+	display:block;
 	font-weight: bold;
 	text-decoration:none;
 	color: white;
 	text-transform:uppercase;
 	font-size: 20px;  /*  log-in / reg  text size */
 	border-radius: 25px;
-	padding: 3%;
-	float: left;
-	margin-left: 10%;
-	}
+	padding: 8%;
+	float: right;
+}
+
+
+/* ######### SOCIAL MEDIA  ######################################## */
+
+#social-media{
 	
+	float: right;
+	clear: right;
+	margin-right: 40%;
+	
+	}
+
+#social-media ul li{ 
+	display:inline;
+	list-style-type:none;
+	
+}
+
+
+/* ######### PHONE & ADDRESS  ######################################## */
+
+#phone_addr{
+	position: relative;
+	float: right;
+	margin-top: 1%;
+	margin-left: 5%;
+	clear: right;
+}
+
+#phone_addr p{
+	 padding: 2%;
+	 font-weight: bold;
+	}
+
+
+/* ################## MENU ######################################## */
+
+/* menu container */
+#topnav {
+	list-style:none;
+	padding-bottom: 4%;
+	border-radius: 25px;
+	clear:both;
+}
+
+/* whole menu */
+#topnav ul {
+  	width: auto;
+  	list-style-type: none;
+  	margin:0;
+	padding:0;
+	
+}
+
+/* Menu boxes */
+#topnav ul li{
+	display:inline;
+	list-style-type:none;
+	margin-right: 1.1%;
+	margin-left: 1.1%;
+	font-size:14px;
+	color: white;
+	background-color:#36b21a;
+	border-radius: 20px;
+	width: 22.7%;
+
+	float:left;
+	display:block;
+	position:relative;
+	z-index:999;
+}
+
+
+
+/* menu text */
+#topnav li a{
+	display:block;
+	
+	font-weight: bold;
+	line-height: 80%;
+	text-decoration:none;
+	color: white;
+	text-transform:uppercase;
+	font-size: 25px;  /*  Menu text size */
+}
+
+
+/*  'about us' sub-menu */
+#topnav > ul li.has-sub:hover ul {
+  display: block;
+  color: blue;
+}
+
+
+/*  'about us' sub-menu */
+#topnav > ul li.has-sub ul {
+  display: none;
+  width: 19%;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: #ffffff;
+  border: 1px solid #fff;
+}
+
+
+/*  'about us' sub-menu */
+#topnav > ul li.has-sub ul li {
+  display: block;
+}
+
+
+/* Padding around menu text */
+#topnav > ul li a {
+  padding: 4% 8% 4% 8%;
+  }
+
+
+/* menu font colour */ 
+#topnav a:visited{
+	color:white;
+}
+
+
+/* Menu text colour when mouse is hovering over it */
+#topnav a:hover{
+	color:green;
+}
+
+
+
+
+/* ##################  IMAGE SLIDER ######################################## */
+
+
 #jssor_1{
+	position: relative; 
 	width: 100%;
 	height: 350px;
 	border-radius: 25px;
+	overflow: hidden; 
+	visibility: hidden;
 }
 
 [data-u="slides"]{
 	width: 100%;
 	height: 350px;
+	cursor: default; 
+	position: relative; 
+	overflow: hidden;
 }
 
-#phone_addr ul{
-	
-	
-	padding: 1%;
-	float:right;
-	clear:right;
-	font-weight: bold;
-}
+
+
+/* ################## BODY ######################################## */
 
 #content{
 	border-radius:20px;
@@ -102,6 +264,8 @@ h1, h2, h3{
 }
 
 
+
+/* ##################  FOOTER / COPYRIGHT  ######################################## */
 #footer{
 	clear:both;
 	border-top:.1% #666 solid;
@@ -114,7 +278,11 @@ h1, h2, h3{
 	font-weight:bold;
 }
 
-/* log-in Form Styles */
+
+
+/* ##################################################### */
+/* ######### LOG - IN PAGE  ######################################## */
+
 
 #login-form{
 	margin-left:25%;
@@ -158,3 +326,10 @@ label{
 }
 
 
+
+/* ##################################################### */
+/* ######### CONTACT  ######################################## */
+
+#contact{
+	margin-left: 25%;
+}
