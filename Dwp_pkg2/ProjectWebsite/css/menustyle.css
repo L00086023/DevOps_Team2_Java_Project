@@ -1,0 +1,115 @@
+
+/* menu container */
+#topnav {
+	list-style:none;
+	padding-bottom: 4%;
+	border-radius: 25px;
+	clear:both;
+}
+
+/* whole menu */
+#topnav ul {
+  	width: auto;
+  	list-style-type: none;
+  	margin:0;
+	padding:0;
+	
+}
+
+/* Menu boxes */
+#topnav ul li{
+	display:inline;
+	list-style-type:none;
+	margin-right: 1.1%;
+	margin-left: 1.1%;
+	font-size:14px;
+	color: white;
+	background-color:#66FF99;
+	border-radius: 20px;
+	width: 22.7%;
+	float:left;
+	display:block;
+	position:relative;
+	z-index:999;
+}
+
+
+
+/* menu text */
+#topnav li a{
+	display:block;
+	padding:0;
+	font-weight: bold;
+	line-height: 80%;
+	text-decoration:none;
+	color: white;
+	text-transform:uppercase;
+	font-size: 20px;  /*  Menu text size */
+}
+
+
+/*  'about us' sub-menu */
+#topnav > ul li.has-sub:hover ul {
+  display: block;
+  color: blue;
+}
+
+
+/*  'about us' sub-menu */
+#topnav > ul li.has-sub ul {
+  display: none;
+  width: 19%;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: #ffffff;
+  border: 1px solid #fff;
+}
+
+
+/*  'about us' sub-menu */
+#topnav > ul li.has-sub ul li {
+  display: block;
+}
+
+
+/* Padding around menu text */
+#topnav > ul li a {
+  padding: 4% 8% 4% 8%;
+  }
+
+
+/* menu font colour */ 
+#topnav a:visited{
+	color:white;
+}
+
+
+/* Menu text colour when mouse is hovering over it */
+#topnav a:hover{
+	color:green;
+}
+
+
+#login a:hover{
+	color:green;
+}
+
+#social-media{
+	
+	margin-left: 43%;
+	background-color: ;
+}
+
+#social-media ul li{ 
+	display:inline;
+	list-style-type:none;
+	
+}
+
+#social-media p{
+	text-align:right;
+}
+
+
