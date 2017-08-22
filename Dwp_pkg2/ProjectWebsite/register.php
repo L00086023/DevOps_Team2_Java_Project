@@ -44,56 +44,48 @@ if(!empty($_POST["register-user"])) {
 
 <html><!-- InstanceBegin template="/Templates/MainTemp.dwt" codeOutsideHTMLIsLocked="false" -->
 
-    <head>
-        <!-- ################################################################################ -->
+        <head>
+            <!-- InstanceBeginEditable name="doctitle" -->
             <title>Pansies</title>
-
-                        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic,300italic' rel='stylesheet' type='text/css'>
-                        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-
-                        <script src="js/jquery.js" type="text/javascript"></script>
-                        <script type="text/javascript" src="js/slider.js"></script>
-                        <script type="text/javascript" src="js/menu.js"></script>
-                        <script type="text/javascript" src="js/imagegallery.js"></script>
-                        <script type="text/javascript" src="js/slide_speed.js"></script>
+            <!-- InstanceEndEditable -->
     
-                        <link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
-                        <link href="css/slider.css" rel="stylesheet" type="text/css" media="screen">
-                        <link href="css/menustyle.css" rel="stylesheet" type="text/css" media="screen">
-                        <link href="css/imagegallery.css" rel="stylesheet" type="text/css" media="screen">
+            <script src="js/jquery.js" type="text/javascript"></script>
+            <link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+            <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic,300italic' rel='stylesheet' type='text/css'>
+            <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    
+            <script type="text/javascript" src="js/slider.js"></script>
+            <script type="text/javascript" src="js/menu.js"></script>
+            <script type="text/javascript" src="js/imagegallery.js"></script>
+            <script type="text/javascript" src="js/slide_speed.js"></script>
+    
+            <link href="css/slider.css" rel="stylesheet" type="text/css" media="screen">
+            <link href="css/menustyle.css" rel="stylesheet" type="text/css" media="screen">
+            <link href="css/imagegallery.css" rel="stylesheet" type="text/css" media="screen">
     </head>
-
-
-
-
 <body>
  <body>
         <div id="wrapper">
-                <!-- ################################################################################ -->
+        
+                   <!-- ################################################################################ -->
                 <div id="top">
-                <div id="logo">
-                                    <a href="index.html"> <img src="images/logo.jpg"> </a>
-                            </div>
-                            <!-- ################################################################################ -->
-                            
-                            <div id="phone_addr">
-                                    <p> PHONE NO. </br> (074) - 9123456 </p>
-                                    <p> ADDRESS </br>  Main St. Letterkenny, Co.Donegal, Ireland </p>
-                            </div><!--Close phone_addr div-->
-                            
-                            <!-- ################################################################################ -->
-                            
-                            <div id="social-media">
-                                    <p>For Additional Information<br>Please Call 123456789</p>
-                                    <ul>
-                                                <li><a href="http://www.facebook.com"><img src="images/icons/facebook.png"></a></li>
-                                                <li><a href="http://www.twitter.com"><img src="images/icons/twitter.png"></a></li>
-                                                <li><a href="http://www.instagram.com"><img src="images/icons/Instagram-Icon.png"></a></li>
-                                                <li><a href="http://www.youtube.com"><img src="images/icons/youtube.png"></a></li>
-                                    </ul>
-                            </div>
-                            <!-- ################################################################################ -->
-                </div>
+                        <div id="logo">
+                                <img src="images/logo.jpg">
+                        </div><!--Close logo div-->
+
+                        <div id="login">
+                                        <div id="loginlink"> <a href="login.html"><span>Login</span></a> </div>
+                                        <div id ="reglink"> <a href="http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/register.php"><span>Register</span></a></div>
+                        </div><!--Close login div-->
+                        
+                        <div id="phone_addr">
+                            <ul>
+                                 &bull;(074) - 9123456 <br>
+                                 &bull;Main St. Letterkenny, <br>Co.Donegal, Ireland 
+                            </ul>
+                        </div><!--Close phone_addr div-->
+                        
+                </div><!--Close top div--
                 <!-- ################################################################################ -->
                 <div id="topnav">
                         <ul>
@@ -162,7 +154,7 @@ if(!empty($_POST["register-user"])) {
 <?php } ?>
 
 <tr>
-<td>CustId</td>
+<td>Customer Id</td>
 <td><input type="text" class="demoInputBox" name="CustID" value="<?php if(isset($_POST['CustID'])) echo $_POST['CustID']; ?>"></td>
 </tr>
 <tr>
@@ -201,10 +193,25 @@ if(!empty($_POST["register-user"])) {
 </body>
 
   <div id="footer">
-                    <p>&copy;Copyright 2017 &bull; All Rights Reserved &bull; Dev Ops Team 2 Project(Pansies) @ LYITLabs  &bull; LYIT Letterkenny Co.Donegal</p>
-            </div>
-        <!-- ################################################################################ -->
-        </div>  
+                                    <p>&copy;Copyright 2017 &bull; All Rights Reserved &bull; Dev Ops Team 2 Project(Pansies) @ LYITLabs  &bull; LYIT Letterkenny Co.Donegal</p>
+                                    <div id="social-media">
+                                <ul>
+                                        <li><a href="http://www.facebook.com"><img src="images/icons/facebook.png"></a></li>
+                                        <li><a href="http://www.twitter.com"><img src="images/icons/twitter.png"></a></li>
+                                        <li><a href="http://www.instagram.com"><img src="images/icons/Instagram-Icon.png"></a></li>
+                                        <li><a href="http://www.youtube.com"><img src="images/icons/youtube.png"></a></li>
+                                        
+                                </ul>
+                        </div><!--Close social-media div-->
+                                    
+                        </div><!--Close footer div-->
+                        
+                        
+                        
+                
+             
+        </div><!--Close wrapper div-->
     </body>
 
+<!-- InstanceEnd -->
 </html>
