@@ -15,52 +15,15 @@
 						<script type="text/javascript" src="js/imagegallery.js"></script>
 						<script type="text/javascript" src="js/slide_speed.js"></script>
     
+						<link href="css/products.css" rel="stylesheet" type="text/css" media="screen">
 						<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
 						<link href="css/slider.css" rel="stylesheet" type="text/css" media="screen">
 						<link href="css/menustyle.css" rel="stylesheet" type="text/css" media="screen">
 						<link href="css/imagegallery.css" rel="stylesheet" type="text/css" media="screen">
 						
-						<script type="text/javascript">
-	$(function () {
-		
-		var filterList = {
-		
-			init: function () {
-			
-				// MixItUp plugin
-				// http://mixitup.io
-				$('#portfoliolist').mixItUp({
-  				selectors: {
-    			  target: '.portfolio',
-    			  filter: '.filter'	
-    		  },
-    		  load: {
-      		  filter: '.All'  
-      		}     
-				});								
-			
-			}
+						
+						
 
-		};
-		
-		// Run the show!
-		filterList.init();
-		
-		
-	});	
-	</script>
-
-	
-	<script>
-  $(document).ready(function(){
-    $('.img-zoom').hover(function() {
-        $(this).addClass('transition');
- 
-    }, function() {
-        $(this).removeClass('transition');
-    });
-  });
-</script>
 	</head>
 		
 	<!-- ################################################################################ -->
@@ -76,34 +39,29 @@
 							</div>
 							<!-- ################################################################################ -->
 							
-							<div id="phone_addr">
-									<p> PHONE NO. </br> (074) - 9123456 </p>
-									<p> ADDRESS </br>  Main St. Letterkenny, Co.Donegal, Ireland </p>
-							</div><!--Close phone_addr div-->
+							
 							
 							<!-- ################################################################################ -->
-
-							<<div id="login">
+							<div id="login">
 										<div id="loginlink"> <a href="login.html"><span>Login</span></a> </div>
 										<div id ="reglink"> <a href="http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/register.php"><span>Register</span></a></div>
 						</div><!--Close login div-->
 							
-							<div id="social-media">
-									<p>For Additional Information<br>Please Call 123456789</p>
-									<ul>
-												<li><a href="http://www.facebook.com"><img src="images/icons/facebook.png"></a></li>
-												<li><a href="http://www.twitter.com"><img src="images/icons/twitter.png"></a></li>
-												<li><a href="http://www.instagram.com"><img src="images/icons/Instagram-Icon.png"></a></li>
-												<li><a href="http://www.youtube.com"><img src="images/icons/youtube.png"></a></li>
-									</ul>
-							</div>
+							<div id="phone_addr">
+							<ul>
+								 &bull;(074) - 9123456 <br>
+								 &bull;Main St. Letterkenny, <br>Co.Donegal, Ireland 
+							</ul>
+						</div><!--Close phone_addr div-->
+							
+							
 							<!-- ################################################################################ -->
 				</div>
 				<!-- ################################################################################ -->
 				<div id="topnav">
 						<ul>
 								<li class="active"><a href='index.html'><span>Home</span></a></li>
-								<li class="has-sub"><a href='#'><span>Products</span></a></li>
+								<li class="has-sub"><a href='products.html'><span>Products</span></a></li>
 								<li class="active"><a href='contact.html'><span>Contact</span></a></li>
 								<li class="has-sub"><a href='about.html'><span>About Us</span></a></li>
 						</ul>
@@ -114,10 +72,104 @@
 					<div id="content"> 
 				
 						
-									<div id="products">
-											
-											<h1> Products to be added </h1>
-									</div>
+<div class="wrap">
+    
+    <!-- Define all of the tiles: -->
+    <div class="box">
+      <div class="boxInner">
+        <a href="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/7.jpg">
+		<img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/7.jpg" />
+		</a>
+        <div class="titleBox">Butterfly</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/1.jpg" />
+        <div class="titleBox">An old greenhouse</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/2.jpg" />
+        <div class="titleBox">Purple wildflowers</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/3.jpg" />
+        <div class="titleBox">A birdfeeder</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/10.jpg" />
+        <div class="titleBox">Crocus close-up</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/4.jpg" />
+        <div class="titleBox">The garden shop</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/5.jpg" />
+        <div class="titleBox">Spring daffodils</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/6.jpg" />
+        <div class="titleBox">Iris along the path</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/8.jpg" />
+        <div class="titleBox">The garden blueprint</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/9.jpg" />
+        <div class="titleBox">The patio</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/11.jpg" />
+        <div class="titleBox">Bumble bee collecting nectar</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/12.jpg" />
+        <div class="titleBox">Winding garden path</div>
+      </div>
+    </div>
+    
+  </div>
+  <!-- /#wrap -->
+  
+  <!-- Add some JavaScript to enable toggling the descriptions when an image is tapped on a touchscreen device -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      // See if this is a touch device
+      if ('ontouchstart' in window)
+      {
+        // Set the correct body class
+        $('body').removeClass('no-touch').addClass('touch');
+        
+        // Add the touch toggle to show text
+        $('div.boxInner img').click(function(){
+          $(this).closest('.boxInner').toggleClass('touchFocus');
+        });
+      }
+    });
+  </script>
 											
 						
 						
@@ -127,6 +179,16 @@
 			
             <div id="footer">
 					<p>&copy;Copyright 2017 &bull; All Rights Reserved &bull; Dev Ops Team 2 Project(Pansies) @ LYITLabs  &bull; LYIT Letterkenny Co.Donegal</p>
+					<div id="social-media">
+									
+									<ul>
+												<li><a href="http://www.facebook.com"><img src="images/icons/facebook.png"></a></li>
+												<li><a href="http://www.twitter.com"><img src="images/icons/twitter.png"></a></li>
+												<li><a href="http://www.instagram.com"><img src="images/icons/Instagram-Icon.png"></a></li>
+												<li><a href="http://www.youtube.com"><img src="images/icons/youtube.png"></a></li>
+									</ul>
+							</div>
+					
             </div>
 		<!-- ################################################################################ -->
         </div>	
