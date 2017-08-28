@@ -6,11 +6,7 @@ font-family: 'Open Sans Condensed', sans-serif;
 
 */
 
-#background
-{
-	background-image: url("images/bg.jpg");    
-	background-size: cover;
-}
+
 
 body{
 	background-color:#b24fff;
@@ -341,9 +337,6 @@ label{
 #contact p {
 	margin-left: 20%;
 }
-
-
-
 
 
 
