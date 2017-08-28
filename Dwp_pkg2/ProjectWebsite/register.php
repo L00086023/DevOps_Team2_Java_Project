@@ -26,8 +26,8 @@ if(!empty($_POST["register-user"])) {
     if(!isset($error_message)) {
         require_once("dbcontroller.php");
         $db_handle = new DBController();
-        $query = "INSERT INTO Customer (CustID,Name, Address, Email,TelNum, Password) VALUES
-        ('" . $_POST["CustID"] . "','" . $_POST["Name"] . "', '" . $_POST["Address"] . "', '" . $_POST["Email"] . "', '" . md5($_POST["Telumber"]) . "', '" . $_POST["Password"] . "')";
+        $query = "INSERT INTO Customer (Name, Address, Email,TelNum, Password) VALUES
+        ('" . $_POST["Name"] . "', '" . $_POST["Address"] . "', '" . $_POST["Email"] . "', '" . md5($_POST["Telumber"]) . "', '" . $_POST["Password"] . "')";
         $result = $db_handle->insertQuery($query);
         if(!empty($result)) {
             $error_message = "";
@@ -105,16 +105,12 @@ if(!empty($_POST["register-user"])) {
                                                    
                                  <br>                     
                                  <h1> Registration </h1 text-align:center;>
-                                       
-
-
-                                            
-
+                                    
 
                                 <style>
                                      h1{
 
-                                          margin-left: 385px;
+                                        margin-left: 385px;
                                      }
                                      .btnRegister {
                                     padding: 10px 30px;
@@ -124,7 +120,7 @@ if(!empty($_POST["register-user"])) {
                                     color: #FFF;
                                     cursor: pointer;
                                     border-radius: 4px;
-                                    margin-left: 105px;
+                                    margin-left: 11px;
                                 }    
                                 .error-message {
                                     padding: 7px 10px;
@@ -152,10 +148,7 @@ if(!empty($_POST["register-user"])) {
                                 <div class="error-message"><?php if(isset($error_message)) echo $error_message; ?></div>
                                 <?php } ?>
 
-                                <tr>
-                                <td>Customer Id</td>
-                                <td><input type="text" class="demoInputBox" name="CustID" value="<?php if(isset($_POST['CustID'])) echo $_POST['CustID']; ?>"></td>
-                                </tr>
+                                
                                 <tr>
                                 <td>Name</td>
                                 <td><input type="text" class="demoInputBox" name="Name" value="<?php if(isset($_POST['Name'])) echo $_POST['Name']; ?>"></td>
@@ -180,8 +173,9 @@ if(!empty($_POST["register-user"])) {
 
 
                                 <tr>
-                                <td colspan=3>
-                                <input type="checkbox" name="terms"> I accept Terms and Conditions <input type="submit" name="register-user" value="Register" class="btnRegister"></td>
+                                <td colspan=2>
+                                <br>
+                              I accept Terms and Conditions <input type="checkbox" name="terms"><br><input type="submit" name="register-user" value="Register" class="btnRegister"></td>
                                 </tr>
                                 </table>
                                     </div> <!-- end content div -->
