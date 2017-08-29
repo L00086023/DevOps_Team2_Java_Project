@@ -59,7 +59,7 @@ h1, h2, h3{
 }
 
 #login a:hover{
-	color:green;
+	color:#b24fff;
 }
 
 
@@ -115,13 +115,9 @@ h1, h2, h3{
 	float: right;
 	margin-top: 1%;
 	margin-left: 5%;
+	margin-right: 8%;
 	clear: right;
 }
-
-#phone_addr p{
-	 padding: 2%;
-	 font-weight: bold;
-	}
 
 
 /* ################## MENU ######################################## */
@@ -179,7 +175,7 @@ h1, h2, h3{
 /*  'about us' sub-menu */
 #topnav > ul li.has-sub:hover ul {
   display: block;
-  color: blue;
+  color: #b24fff;
 }
 
 
@@ -216,7 +212,7 @@ h1, h2, h3{
 
 /* Menu text colour when mouse is hovering over it */
 #topnav a:hover{
-	color:green;
+	color:#b24fff;
 }
 
 
@@ -324,7 +320,7 @@ label{
 
 
 
-/* ##################################################### */
+/* ########################################################### */
 /* ######### CONTACT  ######################################## */
 
 
@@ -425,3 +421,90 @@ label{
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
   <![endif]-->
 
+
+  
+/* ########################################################### */
+/* ######### PRODUCT PAGE  ######################################## */
+
+#content-wrapper{
+	border: 5px solid black;
+	}
+
+#product-content{
+	background-color: rgb(227, 193, 255); 
+	margin-top: 4%;
+	margin-bottom:2%;
+	padding: 2%;
+	border: 5px solid #36b21a;
+	border-radius: 15px;
+	}
+
+#product_content  img{
+	margin-top: 10%;
+	float: left;
+	}
+	
+#product-container {
+	float:right;
+	width: 50%;
+	margin-right: 1%;
+	margin-left: 3%;
+	border: 2px solid #36b21a;
+	border-radius: 15px;
+	font-size: 18px;
+	padding: 2%;
+	}
+	
+	
+#product-desc{
+	float:left;
+	width: 52%;
+	
+	padding: 2%;
+	
+}	
+	
+#buy-container{
+	float: right;
+	margin-top: 25%;
+	width: 40%;
+	
+}
+
+#buy-container li{
+	border: 1px solid #36b21a;
+	border-radius: 15px;
+	font-family: calibri;
+	font-size: 25px;
+	
+	list-style-type: none;
+	padding: 5%;
+	
+}
+
+#buy-container a{
+	background-color:#36b21a;
+	display:block;
+	font-weight: bold;
+	text-decoration:none;
+	color: white;
+	
+	font-size: 20px;  /*  log-in / reg  text size */
+	border-radius: 25px;
+	padding: 5%;
+	margin-top: 5%;
+}
+
+#buy-container a:hover{
+	color: #b24fff;
+}
+
+
+
+	
+	
+	
+	
+	
+	
+	

@@ -76,7 +76,7 @@ echo "Thank You!";
 						
 								<div id="contact">
 									
-										<form action="" method="POST">
+										<form name="contact_form" action="" method="post">
 													<p>Name</p> <input type="text" name="name">
 													<p>Email</p> <input type="text" name="email">
 													<p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
