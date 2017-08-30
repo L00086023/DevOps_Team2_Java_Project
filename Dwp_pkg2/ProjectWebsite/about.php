@@ -51,7 +51,6 @@ session_start();
 							echo "<div id=loginlink> <a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/login.php><span>Login</span></a> </div>";
 							echo "<div id=reglink> <a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/register.php><span>register</span></a> </div>";
 							
-							
 							}else{
 							echo "
 							 <div id=loginlink> <a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/logout.php><span>logout</span></a> </div>  <br>   Welcome $_SESSION[Email] ";
@@ -105,9 +104,9 @@ if(isset($_GET['logout']))
 				<div id="topnav">
 						<ul>
 								<li class="active"><a href='index.php'><span>Home</span></a></li>
-								<li class="has-sub"><a href='products.<?php  ?>'><span>Products</span></a></li>
-								<li class="active"><a href='contact.html'><span>Contact</span></a></li>
-								<li class="has-sub"><a href='about.php'><span>About Us</span></a></li>
+								<li class="has-sub"><a href='products.html'><span>Products</span></a></li>
+								<li class="active"><a href='contact.php  ?>'><span>Contact</span></a></li>
+								<li class="has-sub"><a href='about.php  ?>'><span>About Us</span></a></li>
 						</ul>
 				</div>
 				<!-- ################################################################################ -->
@@ -116,11 +115,11 @@ if(isset($_GET['logout']))
 					<div id="content"> 
 				
 						
-									<div id="contact">
+									<div id="about">
 											
-											<h1>  CONTACT US </h1>
+											<h1>  ABOUT US </h1>
 											</br>
-											<h3>.......................... </br>  ....................... </br>  ........................... </br> </h3>
+											<h3> We .......................... </br>  ....................... </br>  ........................... </br> </h3>
 											</br>
 											</br>
 									</div>
@@ -131,7 +130,7 @@ if(isset($_GET['logout']))
 				</div><!-- end content-wrapper div -->
             <!-- ################################################################################ -->
 			
-       <div id="footer">
+          <div id="footer">
 									<p>&copy;Copyright 2017 &bull; All Rights Reserved &bull; Dev Ops Team 2 Project(Pansies) @ LYITLabs  &bull; LYIT Letterkenny Co.Donegal</p>
 									<div id="social-media">
 								<ul>
@@ -144,8 +143,8 @@ if(isset($_GET['logout']))
 									
 						</div><!--Close
 		<!-- ################################################################################ -->
-		</div>
-        </div>	
+         </div>
+	   </div>	
     </body>
 
 </html>

@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
 
 
 <html><!-- InstanceBegin template="/Templates/MainTemp.dwt" codeOutsideHTMLIsLocked="false" -->
@@ -35,9 +37,57 @@
 							</div>
 							<!-- ################################################################################ -->
 							<div id="login">
-										<div id="loginlink"> <a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/login.php><span>Login</span></a> </div>
-										<div id ="reglink"> <a href="http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/register.php"><span>Register</span></a></div>
-						</div><!--Close login div-->
+
+
+
+    									
+						
+    								
+							                              
+							                                    <?Php
+							if(!(isset($_SESSION['Email']))){
+							echo "Please <a href=login.php>login</a> to use this page ";
+							
+							}else{
+							echo "Welcome $_SESSION[Email] | <div id=loginlink> <a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/logout.php><span>logout</span></a> </div>";
+							}
+							?>
+																	
+										
+ 								
+
+									
+
+										
+								
+										
+                                   
+
+                                  <?php 
+                                  	if(isset($_SESSION['Email']))
+                                  	{
+
+                                  		echo "welcome ".$_SESSION['Email']. "";
+
+                                  	}
+                                  	echo "";
+                                 
+
+
+
+                                   ?>
+
+                                   <?php 
+
+if(isset($_GET['logout']))
+{
+  session_unset();
+  session_destroy();
+  echo "you have been logged out";
+
+
+}
+?>
 							
 							<div id="phone_addr">
 							<ul>
@@ -53,7 +103,7 @@
 				<!-- ################################################################################ -->
 				<div id="topnav">
 						<ul>
-								<li class="active"><a href='index.php>'><span>Home</span></a></li>
+								<li class="active"><a href='index.php'><span>Home</span></a></li>
 								<li class="has-sub"><a href='products.html'><span>Products</span></a></li>
 								<li class="active"><a href='contact.html'><span>Contact</span></a></li>
 								<li class="has-sub"><a href='about.html'><span>About Us</span></a></li>
@@ -82,14 +132,25 @@
 		<a href="http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/register.php"><span>Dont have an account click here</span></a>
 </form>
  
- <?php  session_start(); ?> 
+
 <?php 
+
+if(isset($_POST['logout']))
+{
+  session_unset();
+  session_destroy();
+  echo "you have been logged out";
+
+
+}
+
 
 if(isset($_SESSION['use']))   // Checking whether the session is already there or not if 
                               // true then header redirect it to the home page directly 
  {
-    header("Location:index.php"); 
+    header("Location:login.php"); 
  }
+
 
 	// this will trigger when submit button click
 	if(isset($_POST['sub'])){
