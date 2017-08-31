@@ -95,6 +95,10 @@ if(!empty($_POST["register-user"])) {
                         </ul>
 
   
+ 
+
+
+
                             <div id="content-wrapper">
                                 <div id="content"> 
                                 <div id="about">

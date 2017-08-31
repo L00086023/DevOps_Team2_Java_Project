@@ -1,8 +1,16 @@
-<?php
-session_start();
+<?php $name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+$formcontent="From: $name \n Message: $message";
+$recipient = "pansylyit@gmail.com";
+$subject = "Contact Form";
+$mailheader = "From: $email \r\n";
+mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+echo "Thank You!";
 ?>
-
-
+<!-- ################################################################################ --><!-- ################################################################################ -->
+<!-- ################################################################################ --><!-- ################################################################################ -->
+<!-- ################################################################################ --><!-- ################################################################################ -->
 <!doctype html>
 
 <html><!-- InstanceBegin template="/Templates/MainTemp.dwt" codeOutsideHTMLIsLocked="false" -->
@@ -38,65 +46,14 @@ session_start();
 						</div><!--Close logo div-->
 
 						<div id="login">
-
-
-
-    									
-						
-
-
-							                   
-							                                    <?Php
-							if(!(isset($_SESSION['Email']))){
-							echo "<div id=loginlink> <a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/login.php><span>Login</span></a> </div>";
-							echo "<div id=reglink> <a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/register.php><span>register</span></a> </div>";
-							
-							
-							}else{
-							echo "
-							 <div id=loginlink> <a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/logout.php><span>logout</span></a> </div>  <br>   Welcome $_SESSION[Email] ";
-							}
-							?>
-
-																	
-
-										
-								
-										
-                                   
-
-                                  
-
-                                   <?php 
-
-if(isset($_GET['logout']))
-{
-  session_unset();
-  session_destroy();
-  echo "you have been logged out";
-
-
-}
-?>
-
-											
-										
-										
-
-                       			
-				     
-																			      
-																				
-                                    
-
-
-										
+										<div id="loginlink"> <a href="login.html"><span>Login</span></a> </div>
+										<div id ="reglink"> <a href="http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/register.php"><span>Register</span></a></div>
 						</div><!--Close login div-->
 						
 						<div id="phone_addr">
 							<ul>
-								 &bull;(074) - 9123456 <br>
-								 &bull;Main St. Letterkenny, <br>Co.Donegal, Ireland 
+								 (074) - 9123456 <br>
+								 Main St. Letterkenny, <br>Co.Donegal, Ireland 
 							</ul>
 						</div><!--Close phone_addr div-->
 						
@@ -104,10 +61,10 @@ if(isset($_GET['logout']))
 				<!-- ################################################################################ -->
 				<div id="topnav">
 						<ul>
-								<li class="active"><a href='index.php'><span>Home</span></a></li>
-								<li class="has-sub"><a href='products.<?php  ?>'><span>Products</span></a></li>
-								<li class="active"><a href='contact.html'><span>Contact</span></a></li>
-								<li class="has-sub"><a href='about.php'><span>About Us</span></a></li>
+								<li class="active"><a href='index.html'><span>Home</span></a></li>
+								<li class="has-sub"><a href='products.html'><span>Products</span></a></li>
+								<li class="active"><a href='contact.html'><span>Contact Us</span></a></li>
+								<li class="has-sub"><a href='about.html'><span>About Us</span></a></li>
 						</ul>
 				</div>
 				<!-- ################################################################################ -->
@@ -115,15 +72,17 @@ if(isset($_GET['logout']))
 				<div id="content-wrapper">
 					<div id="content"> 
 				
+						<h1> Please don't hesitate to contact us if you have any queries. </h1>
 						
-									<div id="contact">
-											
-											<h1>  CONTACT US </h1>
-											</br>
-											<h3>.......................... </br>  ....................... </br>  ........................... </br> </h3>
-											</br>
-											</br>
-									</div>
+								<div id="contact">
+									
+										<form action="" method="POST">
+													<p>Name</p> <input type="text" name="name">
+													<p>Email</p> <input type="text" name="email">
+													<p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
+													<input type="submit" value="Send"><input type="reset" value="Clear">
+										</form>
+								</div>
 											
 						
 						
