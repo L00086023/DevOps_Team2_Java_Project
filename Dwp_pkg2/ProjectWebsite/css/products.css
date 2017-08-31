@@ -22,12 +22,13 @@
 #product-container {
 	float:right;
 	width: 50%;
+	
 	clear:bottom;
 	margin-right: 1%;
 	margin-left: 2%;
-	border: 5px solid #36b21a;
-	border-radius: 25px;
-	font-size: 15.3px;
+	#border: 5px solid #36b21a;
+	#border-radius: 25px;
+	font-size: 100%;
 	padding: 2%;
 	}
 	
@@ -36,6 +37,7 @@
 	float:left;
 	width: 40%;
 	padding: 2%;
+	
 }	
 	
 #buy-container{
