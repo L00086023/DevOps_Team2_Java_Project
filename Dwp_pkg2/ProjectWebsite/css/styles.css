@@ -9,8 +9,12 @@ font-family: 'Open Sans Condensed', sans-serif;
 
 
 body{
-	background-color:#b24fff;
+	
 	font-family:Arial, Helvetica, sans-serif;
+	background-image: url("../images/bg.jpg");    
+	background-size: cover;
+	;
+	
 }
 
 h1, h2, h3{
@@ -21,11 +25,18 @@ h1, h2, h3{
 
 
 #wrapper{
+	
+	background-image: url("../images/wrapper-bg.jpg");    
+	background-size: cover;
 	width:80%; 	
 	margin: 2% auto;
 	background-color:#FFF;
 	border-radius: 25px;
 	padding:0 2%;
+	
+	
+	
+	
 }
 
 #top{
@@ -40,6 +51,8 @@ h1, h2, h3{
 #logo{
 	float:left;
 	margin:3% 0;
+	border: 10px solid white;
+	border-radius: 25px;
 	
 }
 
