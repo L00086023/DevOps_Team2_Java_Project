@@ -1,0 +1,44 @@
+/* ##################################################### */
+/* ######### LOG - IN PAGE  ######################################## */
+
+
+#login-form{
+	margin-left:25%;
+	}
+
+#login-form ol li{
+	list-style-type:none;
+}
+
+#login-form p{
+	margin-left: 10%;
+}
+
+
+input, textarea{
+	display:block;
+	width:350px;
+	border:1px #000 solid;
+	padding:5px;	
+}
+
+textarea{
+	height:150px;
+}
+
+
+
+input:focus, textarea:focus{
+	background-color:#FFD9B3;
+}
+
+label{
+	display:block;
+	margin-top:10px;
+	
+}
+
+.submit{
+	width:100px;
+	margin-top:15px;
+}

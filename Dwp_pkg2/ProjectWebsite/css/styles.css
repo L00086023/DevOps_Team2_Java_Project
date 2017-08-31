@@ -21,8 +21,7 @@ h1, h2, h3{
 
 
 #wrapper{
-	width:70%; 
-	
+	width:80%; 	
 	margin: 2% auto;
 	background-color:#FFF;
 	border-radius: 25px;
@@ -49,14 +48,10 @@ h1, h2, h3{
 #login{
 		position: relative;
 		float:right;
-		margin-left:3%;
 		margin-top:3%;
-		width: 30%;
+		width: 25%;
+		clear:bottom;
 		}
-		
-#login ul a{
-
-}
 
 #login a:hover{
 	color:#b24fff;
@@ -65,28 +60,26 @@ h1, h2, h3{
 
 #loginlink a{
 	background-color:#36b21a;
-	display:block;
 	font-weight: bold;
 	text-decoration:none;
 	color: white;
 	text-transform:uppercase;
 	font-size: 20px;  /*  log-in / reg  text size */
 	border-radius: 25px;
-	padding: 8%;
+	padding: 4%;
 	float: left;
+	margin-left:10%;
 }
 
 #reglink a{
-	
 	background-color:#36b21a;
-	display:block;
 	font-weight: bold;
 	text-decoration:none;
 	color: white;
 	text-transform:uppercase;
 	font-size: 20px;  /*  log-in / reg  text size */
 	border-radius: 25px;
-	padding: 8%;
+	padding: 4%;
 	float: right;
 }
 
@@ -94,10 +87,7 @@ h1, h2, h3{
 /* ######### SOCIAL MEDIA  ######################################## */
 
 #social-media{
-	
-	
-	margin-left: 40%;
-	
+	margin-left: 35%;
 	}
 
 #social-media ul li{ 
@@ -114,8 +104,6 @@ h1, h2, h3{
 	position: relative;
 	float: right;
 	margin-top: 1%;
-	margin-left: 5%;
-	margin-right: 8%;
 	clear: right;
 }
 
@@ -239,7 +227,6 @@ h1, h2, h3{
 }
 
 
-
 /* ################## BODY ######################################## */
 
 #content{
@@ -256,12 +243,9 @@ h1, h2, h3{
 	color:#A95400;
 }
 
-
-
 /* ##################  FOOTER / COPYRIGHT  ######################################## */
 #footer{
 	clear:both;
-	
 	padding:1% 0;
 }
 
@@ -270,246 +254,3 @@ h1, h2, h3{
 	font-size:14px;
 	font-weight:bold;
 }
-
-
-
-/* ##################################################### */
-/* ######### LOG - IN PAGE  ######################################## */
-
-
-#login-form{
-	margin-left:25%;
-	}
-
-#login-form ol li{
-	list-style-type:none;
-}
-
-#login-form p{
-	margin-left: 10%;
-}
-
-
-input, textarea{
-	display:block;
-	width:350px;
-	border:1px #000 solid;
-	padding:5px;	
-}
-
-textarea{
-	height:150px;
-}
-
-
-
-input:focus, textarea:focus{
-	background-color:#FFD9B3;
-}
-
-label{
-	display:block;
-	margin-top:10px;
-	
-}
-
-.submit{
-	width:100px;
-	margin-top:15px;
-}
-
-
-
-/* ########################################################### */
-/* ######### CONTACT  ######################################## */
-
-
-#contact{
-	margin-left: 35%;
-	
-}
-
-
-#contact p {
-	margin-left: 20%;
-}
-
-
-
-/* ###########################  PRODUCTS GALLERY ############################ */
-
-
-    .wrap {
-      overflow: hidden;
-      margin: 10px;
-    }
-	
-    .box {
-      float: left;
-      position: relative;
-      width: 20%;
-      padding-bottom: 20%;
-    }
-	
-    .boxInner {
-      position: absolute;
-      left: 10px;
-      right: 10px;
-      top: 10px;
-      bottom: 10px;
-      overflow: hidden;
-    }
-	
-    .boxInner img {
-      width: 100%;
-    }
-	
-	.box:hover .titleBox{
-			height: 20%;
-	}
-	
-	.boxInner .titleBox{
-	position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #b24fff;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  
-  font-weight: bold;
-  
-  opacity: 0.9;
-  
-  transition: .5s ease;
-	}
-	
-
-	
-	
-    
-    body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
-      margin-bottom: 0;
-    }
-    @media only screen and (max-width : 480px) {
-      /* Smartphone view: 1 tile */
-      .box {
-        width: 100%;
-        padding-bottom: 100%;
-      }
-    }
-    @media only screen and (max-width : 650px) and (min-width : 481px) {
-      /* Tablet view: 2 tiles */
-      .box {
-        width: 50%;
-        padding-bottom: 50%;
-      }
-    }
-    @media only screen and (max-width : 1050px) and (min-width : 651px) {
-      /* Small desktop / ipad view: 3 tiles */
-      .box {
-        width: 33.3%;
-        padding-bottom: 33.3%;
-      }
-    }
-    @media only screen and (max-width : 1290px) and (min-width : 1051px) {
-      /* Medium desktop: 4 tiles */
-      .box {
-        width: 25%;
-        padding-bottom: 25%;
-      }
-    }
- 
-  <!-- Enable media queries for old IE -->
-  <!--[if lt IE 9]>
-	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-  <![endif]-->
-
-
-  
-/* ########################################################### */
-/* ######### PRODUCT PAGE  ######################################## */
-
-#content-wrapper{
-	border: 5px solid black;
-	}
-
-#product-content{
-	background-color: rgb(227, 193, 255); 
-	margin-top: 4%;
-	margin-bottom:2%;
-	padding: 2%;
-	border: 5px solid #36b21a;
-	border-radius: 15px;
-	}
-
-#product_content  img{
-	margin-top: 10%;
-	float: left;
-	}
-	
-#product-container {
-	float:right;
-	width: 50%;
-	margin-right: 1%;
-	margin-left: 2%;
-	border: 2px solid #36b21a;
-	border-radius: 15px;
-	font-size: 18px;
-	padding: 2%;
-	}
-	
-	
-#product-desc{
-	float:left;
-	width: 52%;
-	
-	padding: 2%;
-	
-}	
-	
-#buy-container{
-	float: right;
-	margin-top: 25%;
-	width: 40%;
-	
-}
-
-#buy-container li{
-	border: 1px solid #36b21a;
-	border-radius: 15px;
-	font-family: calibri;
-	font-size: 25px;
-	
-	list-style-type: none;
-	padding: 5%;
-	
-}
-
-#buy-container a{
-	background-color:#36b21a;
-	display:block;
-	font-weight: bold;
-	text-decoration:none;
-	color: white;
-	
-	font-size: 20px;  /*  log-in / reg  text size */
-	border-radius: 25px;
-	padding: 5%;
-	margin-top: 5%;
-}
-
-#buy-container a:hover{
-	color: #b24fff;
-}
-
-
-
-	
-	
-	
-	
-	
-	
-	
