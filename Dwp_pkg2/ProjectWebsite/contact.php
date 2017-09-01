@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <?php $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
@@ -46,8 +50,58 @@ echo "Thank You!";
 						</div><!--Close logo div-->
 
 						<div id="login">
-										<div id="loginlink"> <a href="login.html"><span>Login</span></a> </div>
-										<div id ="reglink"> <a href="http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/register.php"><span>Register</span></a></div>
+
+
+
+    									
+						
+
+
+							                   
+						
+             
+							                                    <?Php
+							if(!(isset($_SESSION['Email']))){
+							echo "<div id=loginlink> <a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/login.php><span>Login</span></a> </div>";
+							echo "<div id=reglink> <a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/register.php><span>register</span></a> </div>";
+							
+							}else{
+							echo "
+							 <div id=loginlink> <a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/logout.php>logout</a></div>  <br><a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/passwordform.php> \t\t\tchange password  <br></a> <br>Welcome $_SESSION[Email]";
+
+							
+							}
+							?>
+																	
+
+										
+								
+										
+                                   
+
+                                  
+
+                                   <?php 
+if(isset($_GET['logout']))
+{
+  session_unset();
+  session_destroy();
+  echo "you have been logged out";
+}
+?>
+
+											
+										
+										
+
+                       			
+				     
+																			      
+																				
+                                    
+
+
+										
 						</div><!--Close login div-->
 						
 						<div id="phone_addr">
@@ -61,10 +115,10 @@ echo "Thank You!";
 				<!-- ################################################################################ -->
 				<div id="topnav">
 						<ul>
-								<li class="active"><a href='index.html'><span>Home</span></a></li>
+								<li class="active"><a href='index.php'><span>Home</span></a></li>
 								<li class="has-sub"><a href='products.html'><span>Products</span></a></li>
-								<li class="active"><a href='contact.html'><span>Contact Us</span></a></li>
-								<li class="has-sub"><a href='about.html'><span>About Us</span></a></li>
+								<li class="active"><a href='contact.php'>><span>Contact Us</span></a></li>
+								<li class="has-sub"><a href='about.php'><span>About Us</span></a></li>
 						</ul>
 				</div>
 				<!-- ################################################################################ -->
