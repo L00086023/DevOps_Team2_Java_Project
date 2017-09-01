@@ -8,6 +8,9 @@ if(!empty($_POST["register-user"])) {
         }
     }
 
+
+   
+
   /* Email Validation */
     if(!isset($error_message)) {
         if (!filter_var($_POST["Email"], FILTER_VALIDATE_EMAIL)) {
@@ -27,13 +30,13 @@ if(!empty($_POST["register-user"])) {
         require_once("dbcontroller.php");
         $db_handle = new DBController();
         $query = "INSERT INTO Customer (Name, Address, Email,TelNum, Password) VALUES
-        ('" . $_POST["Name"] . "', '" . $_POST["Address"] . "', '" . $_POST["Email"] . "', '" . md5($_POST["Telumber"]) . "', '" . $_POST["Password"] . "')";
+        ('" . $_POST["Name"] . "', '" . $_POST["Address"] . "', '" . $_POST["Email"] . "', '" . md5($_POST["TelNum"]) . "', '" . $_POST["Password"] . "')";
         $result = $db_handle->insertQuery($query);
         if(!empty($result)) {
             $error_message = "";
-            $success_message = "You have registered successfully! you will be redirdct to the login page"; 
+            $success_message = "Welcome $_POST[Name] you have registered successfully! You will be redirdct to the login page"; 
             unset($_POST);
-            header('Refresh: 5; URL=login.html');
+            header('Refresh: 5; URL=login.php');
 
         } else {
             $error_message = "Problem in registration. Try Again!"; 
@@ -59,9 +62,10 @@ if(!empty($_POST["register-user"])) {
             <script type="text/javascript" src="js/imagegallery.js"></script>
             <script type="text/javascript" src="js/slide_speed.js"></script>
     
-            <link href="css/slider.css" rel="stylesheet" type="text/css" media="screen">
-            <link href="css/menustyle.css" rel="stylesheet" type="text/css" media="screen">
-            <link href="css/imagegallery.css" rel="stylesheet" type="text/css" media="screen">
+            <link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+                        <link href="css/slider.css" rel="stylesheet" type="text/css" media="screen">
+                        
+                        <link href="css/imagegallery.css" rel="stylesheet" type="text/css" media="screen">
     </head>
  <body>
         <div id="wrapper">
@@ -163,7 +167,7 @@ if(!empty($_POST["register-user"])) {
                                 </tr>
                                 <tr>
                                 <td>number</td>
-                                <td><input type="text" class="demoInputBox" name="Telumber" value="<?php if(isset($_POST['Telumber'])) echo $_POST['Telumber']; ?>"></td>
+                                <td><input type="text" class="demoInputBox" name="TelNum" value="<?php if(isset($_POST['TelNum'])) echo $_POST['TelNum']; ?>"></td>
                                 </tr>
                                 <tr>
                                 <td>Password</td>
