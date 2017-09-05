@@ -104,7 +104,7 @@ if(isset($_GET['logout']))
 				<div id="topnav">
 						<ul>
 								<li class="active"><a href='index.php'><span>Home</span></a></li>
-								<li class="has-sub"><a href='products.html'><span>Products</span></a></li>
+								<li class="has-sub"><a href='products.php'><span>Products</span></a></li>
 								<li class="active"><a href='contact.php  ?>'><span>Contact</span></a></li>
 								<li class="has-sub"><a href='about.php  ?>'><span>About Us</span></a></li>
 						</ul>
@@ -116,10 +116,10 @@ if(isset($_GET['logout']))
 				
 						
 									<div id="about">
-											
 											<h1>  ABOUT US </h1>
-											</br>
-											<h3> We .......................... </br>  ....................... </br>  ........................... </br> </h3>
+											
+											<h3> Pansy flower shop has been established as a family run business for 50 years. Our first shop was opened on the Main Street in the heart of Letterkenny and we have been supplying quality flowers to our loyal customers. We expanded in 1981 with the opening of a second shop at 28 Upper Main Street, Buncrana allowing us to cater for the Inishowen area of Donegal. </br> 
+											</br>Since then we have added two more shops with our shop in Donegal Town which opened in 1995 and our last shop in Dungloe opening in 1997. We have build a strong loyal customer base with our top quality customer service, if its flowers you need, we have Donegal covered.</h3>
 											</br>
 											</br>
 									</div>
