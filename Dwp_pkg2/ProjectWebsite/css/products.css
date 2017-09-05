@@ -72,3 +72,42 @@
 #buy-container a:hover{
 	color: #b24fff;
 }
+
+
+
+.form-products {
+  border-top: 1px solid #bdc0c3;
+}
+.ttu {
+  text-transform: uppercase;
+}
+.field-product {
+  height: 50px;
+  font-weight: bold;
+}
+
+.field-product--input {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  padding: 0;
+  border: none;
+  font-size: 18px;
+  text-align: center;
+  color: #ed193f;
+}
+
+.field-product--label {
+  height: 40px;
+  line-height: 40px;
+}
+
+button {
+  display: block;
+  width: 200px;
+  text-align: left;
+  padding: 10px;
+  background: none;
+  border: none;
+}
