@@ -105,9 +105,9 @@ if(isset($_GET['logout']))
 				<div id="topnav">
 						<ul>
 								<li class="active"><a href='index.php'><span>Home</span></a></li>
-								<li class="has-sub"><a href='products.html'><span>Products</span></a></li>
-								<li class="active"><a href='contact.html'><span>Contact</span></a></li>
-								<li class="has-sub"><a href='about.html'><span>About Us</span></a></li>
+								<li class="has-sub"><a href='products.php'><span>Products</span></a></li>
+								<li class="active"><a href='contact.php'><span>Contact</span></a></li>
+								<li class="has-sub"><a href='about.php'><span>About Us</span></a></li>
 						</ul>
 				</div>
 				<!-- ################################################################################ -->
