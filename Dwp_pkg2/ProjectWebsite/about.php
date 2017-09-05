@@ -14,16 +14,11 @@ session_start();
 						<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic,300italic' rel='stylesheet' type='text/css'>
 						<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 
-						<script src="js/jquery.js" type="text/javascript"></script>
-						<script type="text/javascript" src="js/slider.js"></script>
-						<script type="text/javascript" src="js/menu.js"></script>
-						<script type="text/javascript" src="js/imagegallery.js"></script>
-						<script type="text/javascript" src="js/slide_speed.js"></script>
+						
     
 						<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
-						<link href="css/slider.css" rel="stylesheet" type="text/css" media="screen">
 						
-						<link href="css/imagegallery.css" rel="stylesheet" type="text/css" media="screen">
+				
 	</head>
 		
 	<!-- ################################################################################ -->

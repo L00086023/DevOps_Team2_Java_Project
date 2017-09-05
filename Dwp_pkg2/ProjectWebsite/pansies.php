@@ -123,10 +123,26 @@ session_start();
 								<div id="product-desc">
 									<h1> Pansies </h1>
 										Pansies... <br>
-										............................................................<br>	
-										............................................................<br>	
-										............................................................<br>	
-										............................................................<br>	
+										<br>	
+										_________________________<br>	
+										
+										<form action="#" class="form-products">
+												  <div class="field-product">
+													    <input type="number" name="qty" id="qty" class="field-product--input" value="1" maxlength="3">
+													        <label for="qty" class="field-product--label ttu">quantity</label>
+												  </div>
+												  <div class="field-product options">
+													    <select class="field-product--option">
+													        <option value="Purple">Purple</option>
+													        <option value="Red">Red</option>
+															<option value="Yellow">Yellow</option>
+															<option value="Blue">Blue</option>
+															
+													    </select>
+												  </div>
+
+												  
+										</form>	
 								
 											<br>
 											<h2> PRICE: €30.00  </h2> 
