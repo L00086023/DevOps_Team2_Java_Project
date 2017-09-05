@@ -34,7 +34,7 @@ session_start();
 				<div id="top">
 							<!-- ################################################################################ -->
 							<div id="logo">
-									<a href="index.html"> <img src="images/logo.jpg"> </a>
+									<a href="index.php>"> <img src="images/logo.jpg"> </a>
 							</div>
 							<!-- ################################################################################ -->
 							<div id="login">
@@ -121,7 +121,9 @@ if(isset($_GET['logout']))
 							<br>
 							<br>
 							<h1>Login</h1>
-							<p>Please enter your Eamil and password below</p>
+							Please enter your Email and password below
+							<br>
+							<br>
 	Email:
 	<input type="text" name="Email">
 	<br />
