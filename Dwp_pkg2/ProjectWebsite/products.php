@@ -128,7 +128,7 @@ session_start();
 		<!-- Define all of the tiles: -->
 		<div class="box">
 				<div class="boxInner">
-							<a href="product1.html">
+							<a href="rose.php">
 							<img src="images/red-rose.jpg" />
 							</a>
 			<div class="titleBox"> Roses  </div>
@@ -138,7 +138,7 @@ session_start();
 		
 		<div class="box">
 				<div class="boxInner">
-							<a href="product1.html">
+							<a href="pansies.php">
 							<img src="images/pansy.jpg" />
 							</a>
 			<div class="titleBox"> Pansies  </div>
@@ -148,7 +148,7 @@ session_start();
 		
 		<div class="box">
 				<div class="boxInner">
-							<a href="product1.html">
+							<a href="daffodil.php">
 							<img src="images/daffodil.jpg" />
 							</a>
 			<div class="titleBox"> Daffodils  </div>
@@ -158,7 +158,7 @@ session_start();
 		
     <div class="box">
 				<div class="boxInner">
-							<a href="product1.html">
+							<a href="tulip.php">
 							<img src="images/tulips.jpg" />
 							</a>
 			<div class="titleBox"> Tulips </div>
@@ -168,7 +168,7 @@ session_start();
 	
     <div class="box">
 				<div class="boxInner">
-							<a href="product1.html">
+							<a href="crocus.php">
 							<img src="images/crocus.jpg" />
 							</a>
 			<div class="titleBox"> Crocus </div>
@@ -178,7 +178,7 @@ session_start();
 	
     <div class="box">
 				<div class="boxInner">
-							<a href="product1.html">
+							<a href="lillies.php">
 							<img src="images/lillies.jpg" />
 							</a>
 			<div class="titleBox"> Lillies  </div>

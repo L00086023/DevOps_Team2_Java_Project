@@ -92,10 +92,10 @@ if(!empty($_POST["register-user"])) {
                 <!-- ################################################################################ -->
                 <div id="topnav">
                         <ul>
-                                <li class="active"><a href='index.html'><span>Home</span></a></li>
-                                <li class="has-sub"><a href='#'><span>Products</span></a></li>
-                                <li class="active"><a href='contact.html'><span>Contact</span></a></li>
-                                <li class="has-sub"><a href='about.html'><span>About Us</span></a></li>
+                                <li class="active"><a href='index.php'><span>Home</span></a></li>
+                                <li class="has-sub"><a href='Products.php'><span>Products</span></a></li>
+                                <li class="active"><a href='contact.php'><span>Contact</span></a></li>
+                                <li class="has-sub"><a href='about.php'><span>About Us</span></a></li>
                         </ul>
 
   

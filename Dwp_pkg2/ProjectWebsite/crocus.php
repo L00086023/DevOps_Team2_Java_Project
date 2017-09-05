@@ -22,8 +22,9 @@ session_start();
 						<script type="text/javascript" src="js/menu.js"></script>
 						<script type="text/javascript" src="js/imagegallery.js"></script>
 						<script type="text/javascript" src="js/slide_speed.js"></script>
-    
+						
 						<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+						<link href="css/products.css" rel="stylesheet" type="text/css" media="screen">
 						<link href="css/slider.css" rel="stylesheet" type="text/css" media="screen">
 						
 						<link href="css/imagegallery.css" rel="stylesheet" type="text/css" media="screen">
@@ -37,19 +38,11 @@ session_start();
 				<!-- ################################################################################ -->
 					<div id="top">
 						<div id="logo">
-								<img src="images/logo.jpg">
+								<a href="index.html"> <img src="images/logo.jpg"> </a>
 						</div><!--Close logo div-->
 
 						<div id="login">
-
-
-
-    									
-						
-
-
-							                   
-						
+										
              
 							                                    <?Php
 							if(!(isset($_SESSION['Email']))){
@@ -63,37 +56,21 @@ session_start();
 							
 							}
 							?>
-																	
+										  <?php 
 
-										
-								
-										
-                                   
-
-                                  
-
-                                   <?php 
-if(isset($_GET['logout']))
-{
-  session_unset();
-  session_destroy();
-  echo "you have been logged out";
-}
-?>
-
-											
-										
-										
-
-                       			
-				     
-																			      
-																				
-                                    
+							if(isset($_GET['logout']))
+							{
+							  session_unset();
+							  session_destroy();
+							  echo "you have been logged out";
 
 
-										
+							}
+							?>
 						</div><!--Close login div-->
+						
+						
+				<!-- ################################################################################ -->  
 						
 						<div id="phone_addr">
 							<ul>
@@ -107,34 +84,54 @@ if(isset($_GET['logout']))
 				<div id="topnav">
 						<ul>
 								<li class="active"><a href='index.php'><span>Home</span></a></li>
-								<li class="has-sub"><a href='products.html'><span>Products</span></a></li>
+								<li class="has-sub"><a href='products.php'><span>Products</span></a></li>
 								<li class="active"><a href='contact.php'><span>Contact Us</span></a></li>
 								<li class="has-sub"><a href='about.php'><span>About Us</span></a></li>
 						</ul>
 				</div>
 				<!-- ################################################################################ -->
             
-				<div id="content-wrapper">
-					<div id="content"> 
 				
-						<h1> Please don't hesitate to contact us if you have any queries. </h1>
-						
-								<div id="contact">
+				<div id="product-content"> 
 
-								 
-									
-										<form action="mail.php" method="POST">
-													<p>Name <input type="text" name="name"></p>
-													<p>Email <input type="text" name="email"></p>
-													<p>Message <textarea name="message" rows="6" cols="25"></textarea><br /></p>
-													<p><input type="submit" value="Send"><input type="reset" value="Clear"><p>
-										</form>
-								</div>
-											
+						<img src="images/crocus.jpg">
 						
-						
-					</div> <!-- end content div -->
-				</div><!-- end content-wrapper div -->
+						<div id="product-container" ">
+								<div id="product-desc">
+									<h1> Crocus </h1>
+										Crocus... <br>
+										............................................................<br>	
+										<br>	
+										<br>	
+										_________________________<br>	
+										
+										<form action="#" class="form-products">
+												  <div class="field-product">
+													    <input type="number" name="qty" id="qty" class="field-product--input" value="1" maxlength="3">
+													        <label for="qty" class="field-product--label ttu">quantity</label>
+												  </div>
+												  <div class="field-product options">
+													    <select class="field-product--option">
+													        <option value="Pink">Pink</option>
+													        
+													    </select>
+												  </div>
+												  
+										</form>		
+								
+											<br>
+											<h2> PRICE: €30.00  </h2> 
+								</div><!--end product-desc div-->
+							
+								<div id="buy-container">
+									<ul>
+										<a href=""> <li> BUY NOW </li> </a>
+										<a href=""> <li> ADD TO CART </li> </a>
+									</ul>
+								</div><!--end buy-container div-->
+						</div><!--end product-container dic-->
+					
+					</div> <!-- end product-content div -->
             <!-- ################################################################################ -->
 			
        <div id="footer">

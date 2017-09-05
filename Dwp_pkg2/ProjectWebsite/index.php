@@ -107,10 +107,27 @@ session_start();
 
 				<div id="topnav">
 						<ul>
-								<li class="active"><a href="http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/index.php"><span>Home</span></a></li>
-								<li class="active"><a href='products.html'><span>Products</span></a></li>
-								<li class="active"><a href='contact.php'><span>Contact Us</span></a></li>
-								<li class="has-sub"><a href='about.php'><span>About Us</span></a></li>
+
+
+							                                    <?Php
+							if(!(isset($_SESSION['Email']))){
+
+								echo "<li class=active><a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/index.php><span>Home</span></a></li>
+								<li class=active><a href='products.php'><span>Products</span></a></li>
+								<li class=active><a href='contact.php'><span>Contact Us</span></a></li>
+								<li class=has-sub><a href='about.php'><span>About Us</span></a></li>";
+							
+							
+							}else{
+							echo "<li class=active><a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/index.php><span>Home</span></a></li>
+								<li class=active><a href='products.php'><span>Products</span></a></li>
+								<li class=active><a href='contact.php'><span>Contact Us</span></a></li>
+								<li class=has-sub><a href='about.php'><span>About Us</span></a></li>
+								<li class=has-sub><a href='about.php'><span>Specials</span></a></li>";
+							
+							}
+							?>
+								
 						</ul>
 				 </div><!--Close topnav div-->
 				<!-- ################################################################################ -->
@@ -123,49 +140,32 @@ session_start();
 						<div id="content-wrapper">
 								<div id="content"> 
 										<h1>Welcome to the Pansies Online Flower Shop</h1>
-										<p>We are currently running maintenance on our website.</p>
+										
     
-										<div id="jssor_1" style="position: relative; 
-																			top: 0px;
-																			left: 0px; 
-																			overflow: hidden; 
-																			visibility: hidden;">
-
-												<div data-u="slides" style="cursor: default; 
-																				position: relative; 
-																				top: 0px;
-																				left: 0px; 
-																				overflow: hidden;">
-																						
-																						
-															<div data-p="112.50" style="display: none;">
-																	<img data-u="image" src="images/banner/banner1.jpg" />
-															</div><!--Close data-p div-->
-															<div data-p="112.50" style="display: none;">
-																	<img data-u="image" src="images/banner/banner2.jpg" />
-															</div><!--Close data-p div-->
-															<div data-p="112.50" style="display: none;">
-																	<img data-u="image" src="images/banner/banner3.jpg" />
-															</div><!--Close data-p div-->
-															<div data-p="112.50" style="display: none;">
-																	<img data-u="image" src="images/banner/banner4.jpg" />
-															</div><!--Close data-p div-->
-															<div data-p="112.50" style="display: none;">
-																	<img data-u="image" src="images/banner/banner5.jpg" />
-															</div><!--Close data-p div-->
-															<div data-p="112.50" style="display: none;">
-																	<img data-u="image" src="images/banner/banner6.jpg" />
-															</div><!--Close data-p div-->
-															<div data-p="112.50" style="display: none;">
-																	<img data-u="image" src="images/banner/banner7.jpg" />
-															</div><!--Close data-p div-->
-												</div><!--Close data-u slides div-->
-
-												<!-- Bullet Navigator -->
-												<div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;">
-															<!-- bullet navigator item prototype -->
-															<div data-u="prototype" style="width:16px;height:16px;"></div>  <!-- makes arrows image length --> 
-												</div><!--Close data-u prototype div-->
+										<div class="slider" style="max-width:100%">
+															<img class="mySlides" src="images/banner/banner1.jpg" style="width:100%">
+															<img class="mySlides" src="images/banner/banner2.jpg" style="width:100%">
+															<img class="mySlides" src="images/banner/banner5.jpg" style="width:100%">
+															<img class="mySlides" src="images/banner/banner6.jpg" style="width:100%">
+															<img class="mySlides" src="images/banner/banner7.jpg" style="width:100%">
+															
+															
+															<script>
+																	var myIndex = 0;
+																	carousel();
+																	function carousel() {
+																		var i;
+																		var x = document.getElementsByClassName("mySlides");
+																		for (i = 0; i < x.length; i++) {
+																		   x[i].style.display = "none";  
+																		}
+																		myIndex++;
+																		if (myIndex > x.length) {myIndex = 1}    
+																		x[myIndex-1].style.display = "block";  
+																		setTimeout(carousel, 5000); // Change image every 2 seconds
+																	}
+																	</script>
+										</div>
 
 
 										</div><!--Close data-u navigator div-->
