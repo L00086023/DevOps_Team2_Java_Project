@@ -20,6 +20,7 @@ session_start();
 						<script type="text/javascript" src="js/imagegallery.js"></script>
 						<script type="text/javascript" src="js/slide_speed.js"></script>
     
+						<link href="css/loginPage.css" rel="stylesheet" type="text/css" media="screen">
 						<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
 						<link href="css/slider.css" rel="stylesheet" type="text/css" media="screen">
 						
@@ -116,50 +117,36 @@ if(isset($_GET['logout']))
 
 
 
-				<div id="content-wrapper">
+                                <div id="content-wrapper">
 					<div id="content"> 
 				
-						
-									<div id="about">
-									<style>
-                                     h1{
+						<!-- ################################################################################ -->
+								<div id="login-form">
+							<form method="POST">
+							<br>
+							<br>
+							<h1>Change password</h1>
+							Please enter your New and old emial
+							<br>
+							<br>
+	Existing password:
+	 <input type="password" class="form-control" id="InputPassword2" placeholder="New Password" name="newPassword">
+	<br />
+	New Password:
+	<input type="password" class="form-control" id="InputPassword3" placeholder="Confirm Password" name="confirmPassword">  
+	<br />
+	<button class="btn btn-lrg btn-default btn-block" type="submit" value="send">Change it</button>
 
-                                        margin-left: 425px;
-                                     }
-                                     .form {
+     <a href="index.php">Back</a>
 
-                                     	 margin-left: 425px;
-                                }    
-                                
-                                } 
-                                </style> 
+
+</form>
+ 
 
 
 											
 					
 
-				  <div class="form-group">
-				  <form name="frmChange" role="form" class="form-signin" method="POST" action="password.php">
-
-				  <br>
-							<br>
-							<h1>Login</h1>
-							<p>Please enter your Eamil and password below</p>
-
-				    <label for="InputPassword2">New Password</label>
-				    <input type="password" class="form-control" id="InputPassword2" placeholder="New Password" name="newPassword">
-				     <br>
-				     <label for="InputPassword3">Confirm New Password</label>
-				    <input type="password" class="form-control" id="InputPassword3" placeholder="Confirm Password" name="confirmPassword">  </div>
-				   <button class="btn btn-lrg btn-default btn-block" type="submit" value="send">Change it</button>
-
-				   <a href="http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/index.php"><span>Back</span></a>
-
-
-				      
-
-
-				      </form>
 									</div>
 											
 						
