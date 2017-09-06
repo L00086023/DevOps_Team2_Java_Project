@@ -45,8 +45,9 @@ session_start();
 						</div><!--Close logo div-->
 
 						<div id="login">
-										
-              <?Php
+			
+             
+							                                    <?Php
 							if(!(isset($_SESSION['Email']))){
 							echo "<div id=loginlink> <a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/login.php><span>Login</span></a> </div>";
 							echo "<div id=reglink> <a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/register.php><span>register</span></a> </div>";
