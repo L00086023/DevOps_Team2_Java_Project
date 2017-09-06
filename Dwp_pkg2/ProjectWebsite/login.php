@@ -9,15 +9,7 @@ session_start();
 		<!-- ################################################################################ -->
 			<title>Pansies</title>
 
-
-                      		<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 
 
@@ -71,24 +63,8 @@ session_start();
 
 									
 
-										
 								
-										
-                                   
 
-                                  <?php 
-                                  	if(isset($_SESSION['Email']))
-                                  	{
-
-                                  		echo "welcome ".$_SESSION['Email']. "";
-
-                                  	}
-                                  	echo "";
-                                 
-
-
-
-                                   ?>
 
                                    <?php 
 
@@ -197,7 +173,7 @@ if(isset($_SESSION['use']))   // Checking whether the session is already there o
             
 
           echo "Successfully logged in ";
-			header('Refresh: 1; URL=index.php');
+			header('Refresh: 2; URL=index.php');
    
          
 		} else {

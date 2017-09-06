@@ -24,7 +24,7 @@ if ($password1 <> $password2)
 else if (mysqli_query($dbcon, "UPDATE Customer SET Password = '$password1' WHERE Email= '$_SESSION[Email]'"))
 {
     echo "You have successfully changed your password.";
-      header("Location:index.php");
+      header("Location:Account.php");
 }
 else
 {
