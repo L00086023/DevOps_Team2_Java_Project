@@ -17,6 +17,7 @@ $Email = mysqli_real_escape_string($dbcon, $_SESSION['Email']);
 if ($password1 <> $password2)
 {
     echo "your passwords do not match";
+    header("Location:passwordform.php");
     
 
 }
@@ -28,7 +29,7 @@ else if (mysqli_query($dbcon, "UPDATE Customer SET Password = '$password1' WHERE
 else
 {
     mysqli_error($dbcon);
-    echo"gg";
+     header("Location:passwordform.php");
 }
 
 ?>

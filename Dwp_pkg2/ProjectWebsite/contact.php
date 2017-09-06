@@ -14,10 +14,19 @@ session_start();
 		<!-- ################################################################################ -->
 			<title>Pansies</title>
 
+
+			<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 						<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic,300italic' rel='stylesheet' type='text/css'>
 						<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 
-						<link href="css/contact.css" rel="stylesheet" type="text/css" media="screen">
 						<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
 	</head>
 		
@@ -109,18 +118,21 @@ if(isset($_GET['logout']))
 				<div id="content-wrapper">
 					<div id="content"> 
 				
-						<h1> Please don't hesitate to contact us if you have any queries. </h1>
+						<h1> Please don't hesitate to contact us if you have any queries. </h1 text-align:left;>
 						
 								<div id="contact">
 
 								 
 									
-										<form action="mail.php" method="POST">
-													<p>Name <input type="text" name="name"></p>
-													<p>Email <input type="text" name="email"></p>
-													<p>Message <textarea name="message" rows="6" cols="25"></textarea><br /></p>
-													<p><input type="submit" value="Send"><input type="reset" value="Clear"><p>
+										<form  name="form1" action="mail.php" method="POST">
+													<p> <input type="text" name="name" placeholder="name"></p text-align:center;>
+													<p><input type="text" name="email" placeholder="Email"></p text-align:center;>
+													<p><textarea name="message" rows="6" cols="25" placeholder="message"></textarea><br /></p text-align:center;>
+													<p><input type="submit" value="Send"><input type="reset" value="Clear"><p text-align:center;>
+
+
 										</form>
+										
 								</div>
 											
 						

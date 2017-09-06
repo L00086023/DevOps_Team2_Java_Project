@@ -52,6 +52,14 @@ if(!empty($_POST["register-user"])) {
             <title>Pansies</title>
             <!-- InstanceEndEditable -->
     
+            <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
             <script src="js/jquery.js" type="text/javascript"></script>
             <link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
             <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic,300italic' rel='stylesheet' type='text/css'>
@@ -77,7 +85,7 @@ if(!empty($_POST["register-user"])) {
                         </div><!--Close logo div-->
 
                         <div id="login">
-                                        <div id="loginlink"> <a href="login.html"><span>Login</span></a> </div>
+                                        <div id="loginlink"> <a href="login.php"><span>Login</span></a> </div>
                                         <div id ="reglink"> <a href="http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/register.php"><span>Register</span></a></div>
                         </div><!--Close login div-->
                         
@@ -107,8 +115,14 @@ if(!empty($_POST["register-user"])) {
                                 <div id="content"> 
                                 <div id="about">
                                                    
-                                 <br>                     
-                                 <h1> Registration </h1 text-align:center;>
+                                
+
+                             <br>
+                            <br>
+                            <h1>Registration </h1 text-align:center;>
+                            <p>Please enter your details below</p text-align:center;>
+                            <br>
+                         
                                     
 
                                 <style>
