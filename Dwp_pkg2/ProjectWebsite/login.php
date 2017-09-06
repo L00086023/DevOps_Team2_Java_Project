@@ -176,7 +176,25 @@ if(isset($_SESSION['use']))   // Checking whether the session is already there o
 			header('Refresh: 2; URL=index.php');
    
          
-		} else {
+		} 
+
+	if(empty($Email))
+       {
+   
+     echo "Email cannot be empty";
+      
+   
+   
+     }
+
+      else if(empty($Password))
+       {
+   
+     echo " password cannot be empty";
+      
+   
+   
+     }else {
  
 			echo "Incorrect username or password";
 		}

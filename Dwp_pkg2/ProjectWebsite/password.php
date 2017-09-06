@@ -17,19 +17,30 @@ $Email = mysqli_real_escape_string($dbcon, $_SESSION['Email']);
 if ($password1 <> $password2)
 {
     echo "your passwords do not match";
-    header("Location:passwordform.php");
+    header('Refresh:2; URL=Account.php');
     
 
+}
+
+if(empty($password1))
+{
+   
+     echo "cannot be empty";
+      
+    header('Refresh: 2; URL=Account.php');
+   
 }
 else if (mysqli_query($dbcon, "UPDATE Customer SET Password = '$password1' WHERE Email= '$_SESSION[Email]'"))
 {
     echo "You have successfully changed your password.";
-      header("Location:Account.php");
+      
+    header('Refresh: 2; URL=index.php');
+   
 }
 else
 {
     mysqli_error($dbcon);
-     header("Location:passwordform.php");
+     
 }
 
 ?>

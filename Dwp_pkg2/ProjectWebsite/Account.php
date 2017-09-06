@@ -130,13 +130,13 @@ if(isset($_GET['logout']))
 							<br>
 							<br>
 							<h1>Change password</h1>
-							Please enter your New and old emial
+							Please enter your New password
 							<br>
 							<br>
-	Existing password:
+	New password:
 	 <input type="password" class="form-control" id="InputPassword2" placeholder="New Password" name="newPassword">
 	<br />
-	New Password:
+	Confirm password
 	<input type="password" class="form-control" id="InputPassword3" placeholder="Confirm Password" name="confirmPassword">  
 	<br />
 	<button class="btn btn-lrg btn-default btn-block" type="submit" value="send">Change it</button>
