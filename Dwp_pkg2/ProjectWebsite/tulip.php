@@ -126,11 +126,32 @@ session_start();
 											<br>
 											<h2> PRICE: €30.00  </h2> 
 								</div><!--end product-desc div-->
-							
+<link href="style1.css" type="text/css" rel="stylesheet" />
+<table cellpadding="10" cellspacing="1">
+<tbody>
+
+</tbody>
+</table>	
+<?php
+require_once("dbcontroller.php");
+$db_handle = new DBController();
+	$product_array = $db_handle->runQuery("SELECT * FROM Stock where Name='Tulip'");
+	if (!empty($product_array)) { 
+		foreach($product_array as $key=>$value){
+	?>
+	<div class="product-item">
+			<form method="post" action="cartindex.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
+			
+			<div><strong><?php echo $product_array[$key]["Name"]; ?></strong></div>
+			<div><strong><?php echo $product_array[$key]["Colour"]; ?></strong></div>
+			<div class="product-price"><?php echo "&euro;".$product_array[$key]["price"]; ?></div>
+			<div><input type="text" name="quantity" value="1" size="2" /><input type="submit" value="Add to cart" class="btnAddAction" /></div>
+			</form></div>
+		
+<?php }} ?>							
 								<div id="buy-container">
 									<ul>
 										<a href=""> <li> BUY NOW </li> </a>
-										<a href=""> <li> ADD TO CART </li> </a>
 									</ul>
 								</div><!--end buy-container div-->
 						</div><!--end product-container dic-->
