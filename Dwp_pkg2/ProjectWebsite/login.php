@@ -161,7 +161,7 @@ if(isset($_SESSION['use']))   // Checking whether the session is already there o
 		$n = $sql->num_rows;
  
 		// if $n is > 0 it mean their is an existing record that match base on your query above 
-		if($n > 0){
+		 if($n > 0){
 
 			 $_SESSION['Email']=$Email;
 			 
@@ -178,7 +178,7 @@ if(isset($_SESSION['use']))   // Checking whether the session is already there o
          
 		} 
 
-	if(empty($Email))
+	 else if(empty($Email))
        {
    
      echo "Email cannot be empty";
@@ -194,7 +194,7 @@ if(isset($_SESSION['use']))   // Checking whether the session is already there o
       
    
    
-     }else {
+     }else  {
  
 			echo "Incorrect username or password";
 		}
