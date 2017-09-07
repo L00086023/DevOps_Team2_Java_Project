@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="mainPayne" prefHeight="454.0" prefWidth="562.0" styleClass="header-bar" stylesheets="@register.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Maincontroller">
+   <children>
+      <Button id="btnSubmit" layoutX="494.0" layoutY="415.0" mnemonicParsing="false" stylesheets="@application.css" text="Submit" textOverrun="LEADING_WORD_ELLIPSIS" underline="true">
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+      <Label id="lblName" layoutX="14.0" layoutY="102.0" prefHeight="25.0" prefWidth="203.0" text="Enter Date Of Birth(DD/MM/YYYY)" />
+      <Label id="lblAddr" layoutX="14.0" layoutY="56.0" prefHeight="25.0" prefWidth="96.0" text="Enter Address" />
+      <Label id="lblEmail" layoutX="14.0" layoutY="140.0" prefHeight="25.0" prefWidth="96.0" text="Enter Email:" />
+      <Label id="lblTelNo" layoutX="14.0" layoutY="186.0" prefHeight="25.0" prefWidth="146.0" text="Enter Telephone Number:" />
+      <Label layoutX="14.0" layoutY="239.0" prefHeight="25.0" prefWidth="96.0" text="Enter Password:" />
+      <Label id="lblConfirmPwd" layoutX="14.0" layoutY="290.0" prefHeight="25.0" prefWidth="112.0" text="Confirm Password:" />
+      <PasswordField id="tbxPassword" layoutX="315.0" layoutY="239.0" promptText="Password" />
+      <PasswordField id="tbxConfirmPwd" layoutX="315.0" layoutY="290.0" promptText="Confirm Password" />
+      <TextField id="tbxDate" layoutX="315.0" layoutY="102.0" promptText="DD/MM/YY" />
+      <TextField id="tbxAddr" layoutX="200.0" layoutY="56.0" prefHeight="25.0" prefWidth="264.0" promptText="Address" />
+      <TextField id="tbxEmail" layoutX="275.0" layoutY="140.0" prefHeight="25.0" prefWidth="189.0" promptText="Email" />
+      <TextField id="tbxTelNo" layoutX="315.0" layoutY="186.0" promptText="Telephone" />
+      <ComboBox id="adminLevel" layoutX="315.0" layoutY="345.0" prefWidth="150.0" promptText="Admin Level" />
+      <Label id="lblAddr" layoutX="14.0" layoutY="22.0" prefHeight="25.0" prefWidth="96.0" text="Enter Name" />
+      <TextField id="tbxName" layoutX="261.0" layoutY="22.0" prefHeight="25.0" prefWidth="203.0" promptText="Name" />
+   </children>
+</AnchorPane>
