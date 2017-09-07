@@ -25,7 +25,6 @@ h1, h2, h3{
 
 
 #wrapper{
-	
 	background-image: url("../images/wrapper-bg.jpg");    
 	background-size: cover;
 	width:80%; 	
@@ -33,15 +32,10 @@ h1, h2, h3{
 	background-color:#FFF;
 	border-radius: 25px;
 	padding:0 2%;
-	
-	
-	
-	
 }
 
 #top{
 	padding-right: 3.1%;
-	
 	}
 
 

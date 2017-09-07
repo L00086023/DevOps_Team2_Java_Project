@@ -1,9 +1,8 @@
-<<<<<<< HEAD
 <?php
-session_start();
+session_start()
 ?>
 
-<?php
+	<?php
 						if(!(isset($_SESSION['Email']))){
 						$includeMode = "LoggedOut";
 						$cssFileName = 'notLoggedIn.css';
@@ -13,64 +12,71 @@ session_start();
 						}
 	?>
 
-<!-- ################################################################################ --><!-- ################################################################################ -->
-<!-- ################################################################################ --><!-- ################################################################################ -->
-<!-- ################################################################################ --><!-- ################################################################################ -->
 <!doctype html>
 
-<html><!-- InstanceBegin template="/Templates/MainTemp.dwt" codeOutsideHTMLIsLocked="false" -->
-
+<html><!-- InstanceBegin template="/Templates/FinalTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
 	<head>
-		<!-- ################################################################################ -->
+			<!-- InstanceBeginEditable name="doctitle" -->
 			<title>Pansies <?php echo $includeMode; ?></title>
+			<!-- InstanceEndEditable -->
+	
+			<!-- Latest compiled and minified CSS -->
+						<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+						<!-- jQuery library -->
+						<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+						<!-- Latest compiled JavaScript -->
+						<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 						<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic,300italic' rel='stylesheet' type='text/css'>
 						<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 
-						<script type="text/javascript" src="js/products.js"></script>
 						
+    
 						<link href="css/<?php echo $cssFileName;?>" rel="stylesheet" type="text/css" media="screen">
-						<link href="css/products.css" rel="stylesheet" type="text/css" media="screen">
+						<link href="css/specialOffer.css" rel="stylesheet" type="text/css" media="screen">
+						<link href="css/imagegallery.css" rel="stylesheet" type="text/css" media="screen">
+			
+			
 	</head>
-		
+	
+	
 	<!-- ################################################################################ -->
 	<!-- ################################################################################ -->
 	<!-- ################################################################################ -->
-    <body>
+	<body>
+	
 		<div id="wrapper">
-				<!-- ################################################################################ -->
-					<div id="top">
+		
+                   <!-- ################################################################################ -->
+				<div id="top">
 						<div id="logo">
 								<a href="index.html"> <img src="images/logo.jpg"> </a>
 						</div><!--Close logo div-->
 
 						<div id="login">
-										
-             
-					
-             
-							                                    <?Php
+						<?Php
 							if(!(isset($_SESSION['Email']))){
 							echo "<div id=loginlink> <a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/login.php><span>Login</span></a> </div>";
 							echo "<div id=reglink> <a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/register.php><span>register</span></a> </div>";
 							
 							}else{
 							echo "
-							 <div id=loginlink> <a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/logout.php>logout</a></div><div id=reglink><a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/Account.php> \t\t\tDetails  <br></a></div> <br>Welcome $_SESSION[Email]";
+							 <div id=loginlink> <a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/logout.php>logout</a></div>  <div id=reglink><a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/Account.php> \t\t\tDetails  <br></a></div> <br>Welcome $_SESSION[Email]";
 
 							
 							}
-							?>		  <?php 
-
+							?>		
+						<?php 
 							if(isset($_GET['logout']))
 							{
-							  session_unset();
-							  session_destroy();
-							  echo "you have been logged out";
-
-
+								session_unset();
+								session_destroy();
+								echo "you have been logged out";
 							}
 							?>
+
 						</div><!--Close login div-->
 						
 						<div id="phone_addr">
@@ -81,10 +87,12 @@ session_start();
 						</div><!--Close phone_addr div-->
 						
 				</div><!--Close top div-->
-				<!-- ################################################################################ -->
+				<!-- ################################################################################ -->   
+				
+
 				<div id="topnav">
-						<ul>
-						<?Php
+				<ul>
+							<?Php
 							if(!(isset($_SESSION['Email']))){
 
 								echo "<li class=active><a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/index.php><span>Home</span></a></li>
@@ -101,74 +109,32 @@ session_start();
 								<li class=has-sub><a href='about.php'><span>Specials</span></a></li>";
 							
 							}
-						?>
+							?>
+							</ul>
 				</div>
 				<!-- ################################################################################ -->
-            
-				
-					<div id="product-content"> 
-
-						<img src="images/daffodil.jpg">
-						
-						<div id="product-container" ">
-								<div id="product-desc">
-									<h1> Daffodil </h1>
-										Daffodil... <br>
-										<br>	
-										<br>	
-										_________________________<br>	
-										
-										<form action="#" class="form-products">
-												  <div class="field-product">
-													    <input type="number" name="qty" id="qty" class="field-product--input" value="1" maxlength="3">
-													        <label for="qty" class="field-product--label ttu">quantity</label>
-												  </div>
-												  <div class="field-product options">
-													    <select class="field-product--option">
-													       
-															<option value="Yellow">Yellow</option>
-															
-															<option value="White">White</option>
-													    </select>
-												  </div>
-												  
-										</form>		
-								
-											<br>
-											<h2> PRICE: €30.00  </h2> 
-								</div><!--end product-desc div-->
-<link href="style1.css" type="text/css" rel="stylesheet" />
-<table cellpadding="10" cellspacing="1">
-<tbody>
-
-</tbody>
-</table>	
-<?php
-require_once("dbcontroller.php");
-$db_handle = new DBController();
-	$product_array = $db_handle->runQuery("SELECT * FROM Stock where Name='Daffodil'");
-	if (!empty($product_array)) { 
-		foreach($product_array as $key=>$value){
-	?>
-	<div class="product-item">
-			<form method="post" action="cartindex.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
-			
-			<div><strong><?php echo $product_array[$key]["Name"]; ?></strong></div>
-			<div><strong><?php echo $product_array[$key]["Colour"]; ?></strong></div>
-			<div class="product-price"><?php echo "&euro;".$product_array[$key]["price"]; ?></div>
-			<div><input type="text" name="quantity" value="1" size="2" /><input type="submit" value="Add to cart" class="btnAddAction" /></div>
-			</form></div>
 		
-<?php }} ?>							
-								<div id="buy-container">
-									<ul>
-										<a href=""> <li> BUY NOW </li> </a>
-										<a href=""> <li> ADD TO CART </li> </a>
-									</ul>
-								</div><!--end buy-container div-->
-						</div><!--end product-container dic-->
+		<div id="product-content"> 
+
+				<img src="images/orchid.jpg">
+						
+						
+								<div id="product-desc">
+									<h1> SPECIAL OFFER</h1>
+										This is a Special Orchid that is only available to our most loyal customers. 
+										<p>We will be hosting an auction where customers who have been with us for more than ONE year will be in with a chance to bid on this beautiful flower from the Himalayas.</p>
+										<p>If you wish to receive a notification in relation to the auction, please click the below below and we will send an email regarding a date and time. </p>
+										<p>Thank You.</p>
+											<h3> STARTING PRICE: €269.69</h3> 
+															
+										<form method="POST">
+											<input type="submit" name="submit" value="ENTER AUCTION">
+										</form>
+										
+								
+								</div><!--end product-desc div-->
 					
-					</div> <!-- end product-content div -->
+		</div> <!-- end product-content div -->
 	
             <!-- ################################################################################ -->
 			
@@ -188,4 +154,3 @@ $db_handle = new DBController();
 		</div>
         </div>	
     </body>
-</html>

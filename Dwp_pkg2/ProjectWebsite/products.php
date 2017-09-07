@@ -2,6 +2,15 @@
 session_start();
 ?>
 
+<?php
+						if(!(isset($_SESSION['Email']))){
+						$includeMode = "LoggedOut";
+						$cssFileName = 'notLoggedIn.css';
+						}else{
+						$includeMode = "LoggedIn";
+						$cssFileName = 'styles2.0.css';
+						}
+	?>
 
 <!doctype html>
 
@@ -9,7 +18,7 @@ session_start();
 
 	<head>
 		<!-- ################################################################################ -->
-			<title>Pansies</title>
+			<title>Pansies<?php echo $includeMode; ?></title>
 
 						<!-- Latest compiled and minified CSS -->
 						<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -31,7 +40,7 @@ session_start();
     
 						
 						<link href="css/productsGallery.css" rel="stylesheet" type="text/css" media="screen">
-						<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+						<link href="css/<?php echo $cssFileName;?>" rel="stylesheet" type="text/css" media="screen">
 						<link href="css/slider.css" rel="stylesheet" type="text/css" media="screen">
 						
 						<link href="css/imagegallery.css" rel="stylesheet" type="text/css" media="screen">
@@ -119,11 +128,24 @@ session_start();
 				<!-- ################################################################################ -->
 				<div id="topnav">
 						<ul>
-								<li class="active"><a href='index.php'><span>Home</span></a></li>
-								<li class="has-sub"><a href='products.php'><span>Products</span></a></li>
-								<li class="active"><a href='contact.php'><span>Contact Us</span></a></li>
-								<li class="has-sub"><a href='about.php'><span>About Us</span></a></li>
-						</ul>
+						<?Php
+							if(!(isset($_SESSION['Email']))){
+
+								echo "<li class=active><a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/index.php><span>Home</span></a></li>
+								<li class=active><a href='products.php'><span>Products</span></a></li>
+								<li class=active><a href='contact.php'><span>Contact Us</span></a></li>
+								<li class=has-sub><a href='about.php'><span>About Us</span></a></li>";
+							
+							
+							}else{
+							echo "<li class=active><a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/index.php><span>Home</span></a></li>
+								<li class=active><a href='products.php'><span>Products</span></a></li>
+								<li class=active><a href='contact.php'><span>Contact Us</span></a></li>
+								<li class=has-sub><a href='about.php'><span>About Us</span></a></li>
+								<li class=has-sub><a href='about.php'><span>Specials</span></a></li>";
+							
+							}
+						?>
 				</div>
 				<!-- ################################################################################ -->
             

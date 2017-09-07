@@ -45,35 +45,45 @@ if(!empty($_POST["register-user"])) {
 }
 ?>
 
+
+<?php
+						if(!(isset($_SESSION['Email']))){
+						$includeMode = "LoggedOut";
+						$cssFileName = 'notLoggedIn.css';
+						}else{
+						$includeMode = "LoggedIn";
+						$cssFileName = 'styles2.0.css';
+						}
+	?>
+
 <html><!-- InstanceBegin template="/Templates/MainTemp.dwt" codeOutsideHTMLIsLocked="false" -->
 
         <head>
-            <!-- InstanceBeginEditable name="doctitle" -->
-            <title>Pansies</title>
-            <!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<title>Pansies <?php echo $includeMode; ?></title>
+		<!-- InstanceEndEditable -->
     
-            <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-            <script src="js/jquery.js" type="text/javascript"></script>
-            <link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
-            <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic,300italic' rel='stylesheet' type='text/css'>
-            <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/jquery.js" type="text/javascript"></script>
+		
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic,300italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
     
-            <script type="text/javascript" src="js/slider.js"></script>
-            <script type="text/javascript" src="js/menu.js"></script>
-            <script type="text/javascript" src="js/imagegallery.js"></script>
-            <script type="text/javascript" src="js/slide_speed.js"></script>
+		<script type="text/javascript" src="js/slider.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript" src="js/imagegallery.js"></script>
+		<script type="text/javascript" src="js/slide_speed.js"></script>
     
-            <link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
-                        <link href="css/slider.css" rel="stylesheet" type="text/css" media="screen">
-                        
-                        <link href="css/imagegallery.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="css/<?php echo $cssFileName;?>" rel="stylesheet" type="text/css" media="screen">
+		
+		
     </head>
  <body>
         <div id="wrapper">
@@ -100,28 +110,38 @@ if(!empty($_POST["register-user"])) {
                 <!-- ################################################################################ -->
                 <div id="topnav">
                         <ul>
-                                <li class="active"><a href='index.php'><span>Home</span></a></li>
-                                <li class="has-sub"><a href='Products.php'><span>Products</span></a></li>
-                                <li class="active"><a href='contact.php'><span>Contact</span></a></li>
-                                <li class="has-sub"><a href='about.php'><span>About Us</span></a></li>
-                        </ul>
+						<?Php
+							if(!(isset($_SESSION['Email']))){
 
-  
+								echo "<li class=active><a href='index.php'><span>Home</span></a></li>
+								<li class=active><a href='products.php'><span>Products</span></a></li>
+								<li class=active><a href='contact.php'><span>Contact Us</span></a></li>
+								<li class=has-sub><a href='about.php'><span>About Us</span></a></li>";
+							
+							
+							}else{
+							echo "<li class=active><a href='index.php'><span>Home</span></a></li>
+								<li class=active><a href='products.php'><span>Products</span></a></li>
+								<li class=active><a href='contact.php'><span>Contact Us</span></a></li>
+								<li class=has-sub><a href='about.php'><span>About Us</span></a></li>
+								<li class=has-sub><a href='special-offer.php'><span>Specials</span></a></li>";
+							
+							}
+						?>
+
+		</div><!--Close topnav div-->
  
 
 
 
                             <div id="content-wrapper">
                                 <div id="content"> 
-                                <div id="about">
-                                                   
-                                
-
-                             <br>
-                            <br>
-                            <h1>Registration </h1 text-align:center;>
-                            <p>Please enter your details below</p text-align:center;>
-                            <br>
+					<div id="about">
+					<br>
+					<br>
+					<h1>Registration </h1 text-align:center;>
+					<p>Please enter your details below</p text-align:center;>
+					<br>
                          
                                     
 
@@ -196,9 +216,9 @@ if(!empty($_POST["register-user"])) {
                               I accept Terms and Conditions <input type="checkbox" name="terms"><br><input type="submit" name="register-user" value="Register" class="btnRegister"></td>
                                 </tr>
                                 </table>
-                                    </div> <!-- end content div -->
-                                                </div><!-- end content-wrapper div -->
-                                                </div>
+                                    </div> <!-- end about div -->
+			</div><!-- end content div -->
+			</div><!--end content-wrapper div-->
                                             <!-- ################################################################################ -->
 
                                 </form>

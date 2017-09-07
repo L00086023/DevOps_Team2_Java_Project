@@ -1,0 +1,244 @@
+/* CSS Document */
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+
+*/
+
+
+
+body{
+	
+	font-family:Arial, Helvetica, sans-serif;
+	background-image: url("../images/bg.jpg");    
+	background-size: cover;
+	;
+	
+}
+
+h1, h2, h3{
+	font-family:'Open Sans Condensed', Arial, Helvetica, sans-serif;
+	color: black;
+	margin-left: 25%;
+}
+
+
+#wrapper{
+	
+	background-image: url("../images/wrapper-bg.jpg");    
+	background-size: cover;
+	width:85%; 	
+	margin: 2% auto;
+	background-color:#FFF;
+	border-radius: 25px;
+	padding:0 2%;
+}
+
+#top{
+	padding-right: 3.1%;
+	
+	}
+
+
+/* ######### LOGO ###################################### */
+
+
+#logo{
+	float:left;
+	margin:3% 0;
+	border: 10px solid white;
+	border-radius: 25px;
+	
+}
+
+
+/* ######### LOG IN  ##################################### */
+#login{
+		position: relative;
+		float:right;
+		margin-top:3%;
+		width: 28%;
+		clear:bottom;
+		}
+
+#login a:hover{
+	color:#b24fff;
+}
+
+
+#loginlink a{
+	background-color:#36b21a;
+	font-weight: bold;
+	text-decoration:none;
+	color: white;
+	text-transform:uppercase;
+	font-size: 20px;  /*  log-in / reg  text size */
+	border-radius: 25px;
+	padding: 4%;
+	float: left;
+	margin-left:10%;
+}
+
+#reglink a{
+	background-color:#36b21a;
+	font-weight: bold;
+	text-decoration:none;
+	color: white;
+	text-transform:uppercase;
+	font-size: 20px;  /*  log-in / reg  text size */
+	border-radius: 25px;
+	padding: 4%;
+	float: right;
+}
+
+
+/* ######### SOCIAL MEDIA  ######################################## */
+
+#social-media{
+	margin-left: 35%;
+	}
+
+#social-media ul li{ 
+	display:inline;
+	list-style-type:none;
+	margin: 10px;
+	
+}
+
+
+/* ######### PHONE & ADDRESS  ######################################## */
+
+#phone_addr{
+	position: relative;
+	float: right;
+	margin-top: 1%;
+	clear: right;
+}
+
+
+/* ################## MENU ######################################## */
+
+/* menu container */
+#topnav {
+	list-style:none;
+	padding-bottom: 4%;
+	border-radius: 25px;
+	clear:both;
+
+}
+
+/* whole menu */
+#topnav ul {
+  	list-style-type: none;
+	margin-left: -5%;
+}
+
+/* Menu boxes */
+#topnav ul li{
+	display:inline;
+	list-style-type:none;
+	color: white;
+	background-color:#36b21a;
+	border-radius: 20px;
+	width: 20%;
+	float:left;
+	position:relative;
+}
+
+
+
+/* menu text */
+#topnav li a{
+	display:block;
+	font-weight: bold;
+	line-height: 80%;
+	text-decoration:none;
+	color: white;
+	text-transform:uppercase;
+	font-size: 24px;  /*  Menu text size */
+}
+
+
+/*  'about us' sub-menu */
+#topnav > ul li.has-sub:hover ul {
+  display: block;
+  color: #b24fff;
+}
+
+
+/*  'about us' sub-menu */
+#topnav > ul li.has-sub ul {
+  display: none;
+  width: 19.33%;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: #ffffff;
+  border: 1px solid #fff;
+}
+
+
+/*  'about us' sub-menu */
+#topnav > ul li.has-sub ul li {
+  display: block;
+}
+
+
+/* Padding around menu text */
+#topnav > ul li a {
+  padding: 4% 8% 4% 8%;
+  }
+
+
+/* menu font colour */ 
+#topnav a:visited{
+	color:white;
+}
+
+
+/* Menu text colour when mouse is hovering over it */
+#topnav a:hover{
+	color:#b24fff;
+}
+
+
+/* ##################  IMAGE SLIDER ######################################## */
+
+
+
+
+
+
+
+
+
+
+/* ################## BODY ######################################## */
+
+#content{
+	border-radius:20px;
+	width:100%;
+}
+
+#content p{
+	font-size:12px;
+	margin-left: 35%;
+}
+
+#content h2{
+	color:#A95400;
+}
+
+/* ##################  FOOTER / COPYRIGHT  ######################################## */
+#footer{
+	clear:both;
+	padding:1% 0;
+}
+
+#footer p{
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+}

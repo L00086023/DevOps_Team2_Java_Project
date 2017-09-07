@@ -3,6 +3,16 @@ session_start();
 ?>
 
 
+<?php
+						if(!(isset($_SESSION['Email']))){
+						$includeMode = "LoggedOut";
+						$cssFileName = 'notLoggedIn.css';
+						}else{
+						$includeMode = "LoggedIn";
+						$cssFileName = 'styles2.0.css';
+						}
+	?>
+
 <!-- ################################################################################ --><!-- ################################################################################ -->
 <!-- ################################################################################ --><!-- ################################################################################ -->
 <!-- ################################################################################ --><!-- ################################################################################ -->
@@ -12,22 +22,24 @@ session_start();
 
 	<head>
 		<!-- ################################################################################ -->
-			<title>Pansies</title>
+			<title>Pansies <?php echo $includeMode; ?></title>
 
 
 			<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<!-- jQuery library -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<!-- Latest compiled JavaScript -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-						<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic,300italic' rel='stylesheet' type='text/css'>
-						<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+			<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic,300italic' rel='stylesheet' type='text/css'>
+			<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 
-						<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+			<link href="css/<?php echo $cssFileName;?>" rel="stylesheet" type="text/css" media="screen">
+			<link href="css/contact.css" rel="stylesheet" type="text/css" media="screen">
+			
 	</head>
 		
 	<!-- ################################################################################ -->
@@ -41,12 +53,7 @@ session_start();
 								<img src="images/logo.jpg">
 						</div><!--Close logo div-->
 
-						<div id="login">
-
-
-
-    									
-						
+						<div id="login">			
 
  <?Php
 							if(!(isset($_SESSION['Email']))){
@@ -61,35 +68,14 @@ session_start();
 							}
 							?>
 																	
-
-										
-								
-										
-                                   
-
-                                  
-
                                    <?php 
 if(isset($_GET['logout']))
 {
   session_unset();
   session_destroy();
-  echo "you have been logged out";
+  echo "You have been logged out";
 }
-?>
-
-											
-										
-										
-
-                       			
-				     
-																			      
-																				
-                                    
-
-
-										
+?>		
 						</div><!--Close login div-->
 						
 						<div id="phone_addr">
@@ -103,18 +89,31 @@ if(isset($_GET['logout']))
 				<!-- ################################################################################ -->
 				<div id="topnav">
 						<ul>
-								<li class="active"><a href='index.php'><span>Home</span></a></li>
-								<li class="has-sub"><a href='products.html'><span>Products</span></a></li>
-								<li class="active"><a href='contact.php'><span>Contact Us</span></a></li>
-								<li class="has-sub"><a href='about.php'><span>About Us</span></a></li>
-						</ul>
+						<?Php
+							if(!(isset($_SESSION['Email']))){
+
+								echo "<li class=active><a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/index.php><span>Home</span></a></li>
+								<li class=active><a href='products.php'><span>Products</span></a></li>
+								<li class=active><a href='contact.php'><span>Contact Us</span></a></li>
+								<li class=has-sub><a href='about.php'><span>About Us</span></a></li>";
+							
+							
+							}else{
+							echo "<li class=active><a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/index.php><span>Home</span></a></li>
+								<li class=active><a href='products.php'><span>Products</span></a></li>
+								<li class=active><a href='contact.php'><span>Contact Us</span></a></li>
+								<li class=has-sub><a href='about.php'><span>About Us</span></a></li>
+								<li class=has-sub><a href='special-offer.php'><span>Specials</span></a></li>";
+							
+							}
+						?>
 				</div>
 				<!-- ################################################################################ -->
             
 				<div id="content-wrapper">
 					<div id="content"> 
 				
-						<h1> Please don't hesitate to contact us if you have any queries. </h1 text-align:left;>
+						<h1> Please don't hesitate to contact us if you have any queries. </h1> <!--text-align:left;>-->
 						
 								<div id="contact">
 

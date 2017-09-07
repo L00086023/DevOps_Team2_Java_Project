@@ -42,11 +42,22 @@ switch($_GET["action"]) {
 	break;	
 }
 }
+
+<?php
+						if(!(isset($_SESSION['Email']))){
+						$includeMode = "LoggedOut";
+						$cssFileName = 'notLoggedIn.css';
+						}else{
+						$includeMode = "LoggedIn";
+						$cssFileName = 'styles2.0.css';
+						}
+	?>
+
 ?>
 <HTML>
 <HEAD>
-<TITLE>Shopping Cart</TITLE>
-<link href="style.css" type="text/css" rel="stylesheet" />
+<TITLE>Shopping Cart <?php echo $includeMode; ?></TITLE>
+<link href="<?php echo $cssFileName;?>" type="text/css" rel="stylesheet" />
 </HEAD>
 <BODY>
 <div id="shopping-cart">
