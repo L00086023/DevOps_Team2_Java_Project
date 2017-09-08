@@ -39,6 +39,8 @@ session_start();
 
 			<link href="css/<?php echo $cssFileName;?>" rel="stylesheet" type="text/css" media="screen">
 			<link href="css/contact.css" rel="stylesheet" type="text/css" media="screen">
+
+			<link href="css/background_images.css" rel="stylesheet" type="text/css" media="screen">
 			
 	</head>
 		
@@ -50,7 +52,7 @@ session_start();
 				<!-- ################################################################################ -->
 					<div id="top">
 						<div id="logo">
-								<img src="images/logo.jpg">
+								<a href="index.php"> <img src="images/logo.jpg"> </a>
 						</div><!--Close logo div-->
 
 						<div id="login">			

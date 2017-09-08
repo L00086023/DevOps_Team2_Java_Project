@@ -35,6 +35,8 @@ session_start();
 			<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
     
 			<link href="css/<?php echo $cssFileName;?>" rel="stylesheet" type="text/css" media="screen">
+
+			<link href="css/background_images.css" rel="stylesheet" type="text/css" media="screen">
 			
 	</head>
 	
@@ -49,7 +51,7 @@ session_start();
                    <!-- ################################################################################ -->
 				<div id="top">
 						<div id="logo">
-								<img src="images/logo.jpg">
+								<a href="index.php"> <img src="images/logo.jpg"> </a>
 						</div><!--Close logo div-->
 
 						<div id="login">

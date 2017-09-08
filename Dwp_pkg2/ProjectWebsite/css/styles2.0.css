@@ -8,14 +8,7 @@ font-family: 'Open Sans Condensed', sans-serif;
 
 
 
-body{
-	
-	font-family:Arial, Helvetica, sans-serif;
-	background-image: url("../images/bg.jpg");    
-	background-size: cover;
-	;
-	
-}
+
 
 h1, h2, h3{
 	font-family:'Open Sans Condensed', Arial, Helvetica, sans-serif;
@@ -24,16 +17,7 @@ h1, h2, h3{
 }
 
 
-#wrapper{
-	
-	background-image: url("../images/wrapper-bg.jpg");    
-	background-size: cover;
-	width:85%; 	
-	margin: 2% auto;
-	background-color:#FFF;
-	border-radius: 25px;
-	padding:0 2%;
-}
+
 
 #top{
 	padding-right: 3.1%;

@@ -38,6 +38,8 @@ session_start();
     
 						<link href="css/<?php echo $cssFileName;?>" rel="stylesheet" type="text/css" media="screen">
 						<link href="css/about.css" rel="stylesheet" type="text/css" media="screen">
+
+						<link href="css/background_images.css" rel="stylesheet" type="text/css" media="screen">
 						
 				
 	</head>
@@ -50,7 +52,7 @@ session_start();
 				<!-- ################################################################################ -->
 					<div id="top">
 						<div id="logo">
-								<img src="images/logo.jpg">
+								<a href="http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/index.php" > <img src="images/logo.jpg"> </a>
 						</div><!--Close logo div-->
 
 						<div id="login">
@@ -95,17 +97,17 @@ if(isset($_GET['logout']))
 							if(!(isset($_SESSION['Email']))){
 
 								echo "<li class=active><a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/index.php><span>Home</span></a></li>
-								<li class=active><a href='products.php'><span>Products</span></a></li>
-								<li class=active><a href='contact.php'><span>Contact Us</span></a></li>
-								<li class=has-sub><a href='about.php'><span>About Us</span></a></li>";
+								<li class=active><a href='http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/products.php'><span>Products</span></a></li>
+								<li class=active><a href='http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/contact.php'><span>Contact Us</span></a></li>
+								<li class=has-sub><a href='http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/about.php'><span>About Us</span></a></li>";
 							
 							
 							}else{
 							echo "<li class=active><a href=http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/index.php><span>Home</span></a></li>
-								<li class=active><a href='products.php'><span>Products</span></a></li>
-								<li class=active><a href='contact.php'><span>Contact Us</span></a></li>
-								<li class=has-sub><a href='about.php'><span>About Us</span></a></li>
-								<li class=has-sub><a href='special-offer.php'><span>Specials</span></a></li>";
+								<li class=active><a href='http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/products.php'><span>Products</span></a></li>
+								<li class=active><a href='http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/contact.php'><span>Contact Us</span></a></li>
+								<li class=has-sub><a href='http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/about.php'><span>About Us</span></a></li>
+								<li class=has-sub><a href='http://localhost/DevOps_Team2_Java_Project-master/Dwp_pkg2/ProjectWebsite/special-offer.php'><span>Specials</span></a></li>";
 							
 							}
 						?>

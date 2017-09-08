@@ -42,7 +42,7 @@ session_start();
 						<link href="css/<?php echo $cssFileName;?>" rel="stylesheet" type="text/css" media="screen">
 						<link href="css/slider.css" rel="stylesheet" type="text/css" media="screen">
 						
-						<link href="css/imagegallery.css" rel="stylesheet" type="text/css" media="screen">
+						<link href="css/background_images.css" rel="stylesheet" type="text/css" media="screen">
 	</head>
 		
 	<!-- ################################################################################ -->

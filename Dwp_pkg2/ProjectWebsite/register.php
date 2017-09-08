@@ -75,13 +75,11 @@ if(!empty($_POST["register-user"])) {
 		
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic,300italic' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-    
-		<script type="text/javascript" src="js/slider.js"></script>
-		<script type="text/javascript" src="js/menu.js"></script>
-		<script type="text/javascript" src="js/imagegallery.js"></script>
-		<script type="text/javascript" src="js/slide_speed.js"></script>
+
     
 		<link href="css/<?php echo $cssFileName;?>" rel="stylesheet" type="text/css" media="screen">
+
+        <link href="css/background_images.css" rel="stylesheet" type="text/css" media="screen">
 		
 		
     </head>
@@ -91,7 +89,7 @@ if(!empty($_POST["register-user"])) {
                    <!-- ################################################################################ -->
                 <div id="top">
                         <div id="logo">
-                                <img src="images/logo.jpg">
+                                <a href="index.php"> <img src="images/logo.jpg"> </a>
                         </div><!--Close logo div-->
 
                         <div id="login">

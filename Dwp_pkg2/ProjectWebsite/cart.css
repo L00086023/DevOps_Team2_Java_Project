@@ -1,0 +1,35 @@
+#shopping-cart{
+	margin-top: 5%;
+	margin-left: 5%;
+}
+
+.txt-heading{
+
+	margin-bottom: 3%;
+	font-size: 30px;
+}
+
+
+#shopping-cart tr{
+
+	font-size: 30px;
+	
+}
+
+#shopping-cart td{
+
+	font-size: 20px;
+	
+
+}
+
+
+#name{
+	margin: 5%;
+
+}
+
+#code{
+	margin: 5%;
+}
+

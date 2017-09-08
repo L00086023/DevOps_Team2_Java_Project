@@ -43,6 +43,8 @@ switch($_GET["action"]) {
 }
 }
 
+?>
+
 <?php
 						if(!(isset($_SESSION['Email']))){
 						$includeMode = "LoggedOut";

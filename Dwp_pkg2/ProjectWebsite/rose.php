@@ -27,17 +27,15 @@ session_start();
 						<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic,300italic' rel='stylesheet' type='text/css'>
 						<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 
-						<script src="js/jquery.js" type="text/javascript"></script>
-						<script type="text/javascript" src="js/slider.js"></script>
-						<script type="text/javascript" src="js/menu.js"></script>
-						<script type="text/javascript" src="js/imagegallery.js"></script>
-						<script type="text/javascript" src="js/slide_speed.js"></script>
 						
 						<link href="css/<?php echo $cssFileName;?>" rel="stylesheet" type="text/css" media="screen">
 						<link href="css/products.css" rel="stylesheet" type="text/css" media="screen">
-						<link href="css/slider.css" rel="stylesheet" type="text/css" media="screen">
-						
-						<link href="css/imagegallery.css" rel="stylesheet" type="text/css" media="screen">
+						<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+
+						<link href="css/background_images.css" rel="stylesheet" type="text/css" media="screen">
+			
+
+
 	</head>
 		
 	<!-- ################################################################################ -->
@@ -48,7 +46,7 @@ session_start();
 				<!-- ################################################################################ -->
 					<div id="top">
 						<div id="logo">
-								<a href="index.html"> <img src="images/logo.jpg"> </a>
+								<a href="index.php"> <img src="images/logo.jpg"> </a>
 						</div><!--Close logo div-->
 
 						<div id="login">
@@ -116,70 +114,60 @@ session_start();
 				
 						<div id="product-content"> 
 
-						<img src="images/red-rose.jpg">
+								<img src="images/red-rose.jpg">
 						
-						<div id="product-container" ">
-								<div id="product-desc">
-									<h1> Red Roses </h1>
-										This product is a rose. Available in blue, purple, yellow, white. <br>
-										<br>	
-										_________________________<br>	
-										
-										<form action="#" class="form-products">
-												  <div class="field-product">
-													    <input type="number" name="qty" id="qty" class="field-product--input" value="1" maxlength="3">
-													        <label for="qty" class="field-product--label ttu">quantity</label>
-												  </div>
-												  <div class="field-product options">
-													    <select class="field-product--option">
-													        <option value="Red">Red</option>
-													        <option value="Blue">Blue</option>
-															<option value="Yellow">Yellow</option>
-															<option value="Purple">Purple</option>
-															<option value="White">White</option>
-													    </select>
-												  </div>
-												  
-										</form>
+										<div id="product-container" ">
+												<div id="product-desc">
+													<h1> Red Roses </h1>
+														This product is a rose. Available in blue, purple, yellow, white. <br>
+														<br>	
+														_________________________<br>	
 										
 										
-										
-								
-											<br>
-											<h2> PRICE: @euro;5.00  </h2> 
-								</div><!--end product-desc div-->
-
-<link href="style1.css" type="text/css" rel="stylesheet" />
-<table cellpadding="10" cellspacing="1">
-<tbody>
-
-</tbody>
-</table>	
-<?php
-require_once("dbcontroller.php");
-$db_handle = new DBController();
-	$product_array = $db_handle->runQuery("SELECT * FROM Stock where Name='Rose'");
-	if (!empty($product_array)) { 
-		foreach($product_array as $key=>$value){
-	?>
-	<div class="product-item">
-			<form method="post" action="cartindex.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
+										</div><!--end product-desc div-->
 			
-			<div><strong><?php echo $product_array[$key]["Name"]; ?></strong></div>
-			<div><strong><?php echo $product_array[$key]["Colour"]; ?></strong></div>
-			<div class="product-price"><?php echo "&euro;".$product_array[$key]["price"]; ?></div>
-			<div><input type="text" name="quantity" value="1" size="2" /><input type="submit" value="Add to cart" class="btnAddAction" /></div>
-			</form></div>
-		
-<?php }} ?>		
-								<div id="buy-container">
-									<ul>
-										<a href=""> <li> BUY NOW </li> </a>
-									</ul>
-								</div><!--end buy-container div-->
-						</div><!--end product-container dic-->
+										<div id="buy-container">
+											
+											<?php
+											require_once("dbcontroller.php");
+											$db_handle = new DBController();
+												$product_array = $db_handle->runQuery("SELECT * FROM Stock where Name='Rose'");
+												if (!empty($product_array)) { 
+													foreach($product_array as $key=>$value){
+												?>
+												<div id="product-item">
+														<form method="post" action="cartindex.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
+
+														<table style="width:100%">
+																<tr>
+																    <td><div id="colour"><strong><?php echo $product_array[$key]["Colour"]; ?></strong></div></td>
+																    
+																  </tr>
+
+																  <tr>
+																    <td><div id="name"><strong><?php echo $product_array[$key]["Name"]; ?></strong></div></td>
+																    
+																  </tr>
+																  
+																  <tr>
+																    <td><div id="price"><?php echo "&euro;".$product_array[$key]["price"]; ?></div></td>
+																    
+																  </tr>
+																  <tr>
+																    <td><div id="cart-btn"><input type="text" name="quantity" value="1" size="2" /><input type="submit" value="Add to cart" class="btnAddAction" /></div></td>
+																    
+																  </tr>
+																</table>
+														</form>
+												</div>
+													
+											<?php }} ?>	
+
+
+										</div><!--end buy-container div-->
+									</div><!--end product-container dic-->
 					
-					</div> <!-- end product-content div -->
+						</div> <!-- end product-content div -->
 	
             <!-- ################################################################################ -->
 			
