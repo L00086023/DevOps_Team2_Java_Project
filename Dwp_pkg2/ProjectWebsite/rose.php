@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 session_start();
 ?>
@@ -27,10 +26,10 @@ session_start();
 						<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic,300italic' rel='stylesheet' type='text/css'>
 						<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 
-						
+						<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 						<link href="css/<?php echo $cssFileName;?>" rel="stylesheet" type="text/css" media="screen">
 						<link href="css/products.css" rel="stylesheet" type="text/css" media="screen">
-						<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+					
 
 						<link href="css/background_images.css" rel="stylesheet" type="text/css" media="screen">
 			
@@ -121,7 +120,7 @@ session_start();
 													<h1> Red Roses </h1>
 														This product is a rose. Available in blue, purple, yellow, white. <br>
 														<br>	
-														_________________________<br>	
+															
 										
 										
 										</div><!--end product-desc div-->

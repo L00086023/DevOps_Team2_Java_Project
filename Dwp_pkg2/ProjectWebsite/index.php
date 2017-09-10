@@ -25,11 +25,9 @@ session_start();
 
 			<!-- jQuery library -->
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 			<!-- Latest compiled JavaScript -->
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
-			<script src="js/jquery.js" type="text/javascript"></script>
 			
 			<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic,300italic' rel='stylesheet' type='text/css'>
 			<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
@@ -85,8 +83,8 @@ session_start();
 						
 						<div id="phone_addr">
 							<ul>
-								 &bull;(074) - 9123456 <br>
-								 &bull;Main St. Letterkenny, <br>Co.Donegal, Ireland 
+								 (074) - 9123456 <br>
+								 Main St. Letterkenny, <br>Co.Donegal, Ireland 
 							</ul>
 						</div><!--Close phone_addr div-->
 						<? echo "Welcome, $Email"; ?>

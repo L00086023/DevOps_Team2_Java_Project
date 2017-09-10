@@ -31,7 +31,7 @@ session_start();
 						
 						<link href="css/<?php echo $cssFileName;?>" rel="stylesheet" type="text/css" media="screen">
 						<link href="css/products.css" rel="stylesheet" type="text/css" media="screen">
-						<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+						<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 						<link href="css/background_images.css" rel="stylesheet" type="text/css" media="screen">
 	</head>
