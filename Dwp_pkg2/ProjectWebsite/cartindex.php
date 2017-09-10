@@ -89,7 +89,7 @@ switch($_GET["action"]) {
 						<link href="css/<?php echo $cssFileName;?>" rel="stylesheet" type="text/css" media="screen">
 						
 					<link href="cart.css" rel="stylesheet" type="text/css" media="screen">
-					<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+					
 
 					<link href="css/background_images.css" rel="stylesheet" type="text/css" media="screen">
 						
