@@ -27,11 +27,10 @@ session_start();
 						<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic,300italic' rel='stylesheet' type='text/css'>
 						<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 
-						
+						<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 						<link href="css/<?php echo $cssFileName;?>" rel="stylesheet" type="text/css" media="screen">
 						<link href="css/products.css" rel="stylesheet" type="text/css" media="screen">
-						
-						<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+					
 
 						<link href="css/background_images.css" rel="stylesheet" type="text/css" media="screen">
 	</head>
@@ -104,7 +103,7 @@ session_start();
 								<li class=active><a href='products.php'><span>Products</span></a></li>
 								<li class=active><a href='contact.php'><span>Contact Us</span></a></li>
 								<li class=has-sub><a href='about.php'><span>About Us</span></a></li>
-								<li class=has-sub><a href='about.php'><span>Specials</span></a></li>";
+								<li class=has-sub><a href='special-offer.php'><span>Specials</span></a></li>";
 							
 							}
 						?>

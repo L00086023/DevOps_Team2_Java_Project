@@ -101,7 +101,7 @@ session_start();
 								<li class=active><a href='products.php'><span>Products</span></a></li>
 								<li class=active><a href='contact.php'><span>Contact Us</span></a></li>
 								<li class=has-sub><a href='about.php'><span>About Us</span></a></li>
-								<li class=has-sub><a href='about.php'><span>Specials</span></a></li>";
+								<li class=has-sub><a href='special-offer.php'><span>Specials</span></a></li>";
 							
 							}
 						?>
