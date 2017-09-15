@@ -10,10 +10,10 @@ login.click()
 t.sleep(5)
 
 email = driver.find_element_by_id("email")
-email.send_keys("gimp@gmail.com")
+email.send_keys("test@gmail.com")
 
 password = driver.find_element_by_id("password")
-password.send_keys("dorrian")
+password.send_keys("test")
 
 submit = driver.find_element_by_id("submit")
 submit.click()
